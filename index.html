@@ -46,8 +46,8 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 24px;
-            font-size: 15px;
+            margin-left: 20px;
+            font-size: 14px;
             transition: 0.3s;
         }
 
@@ -138,8 +138,6 @@
             margin-bottom: 40px;
         }
 
-        /* JOURNEY */
-
         .timeline {
             max-width: 780px;
             margin: 45px auto 0;
@@ -189,9 +187,8 @@
             font-size: 16px;
         }
 
-        /* INTERESTS */
-
-        .interests-grid {
+        .interests-grid,
+        .focus-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 24px;
@@ -199,7 +196,8 @@
             margin: 40px auto 0;
         }
 
-        .interest-card {
+        .interest-card,
+        .focus-card {
             background: #f6f6f4;
             padding: 34px 28px;
             border-radius: 14px;
@@ -207,30 +205,32 @@
             border: 1px solid #ececec;
         }
 
-        .interest-card:hover {
+        .interest-card:hover,
+        .focus-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 10px 24px rgba(0,0,0,0.08);
         }
 
-        .interest-number {
+        .interest-number,
+        .focus-number {
             font-size: 13px;
             letter-spacing: 2px;
             color: #888;
             margin-bottom: 12px;
         }
 
-        .interest-card h3 {
+        .interest-card h3,
+        .focus-card h3 {
             font-size: 23px;
             margin-bottom: 12px;
             font-weight: 500;
         }
 
-        .interest-card p {
+        .interest-card p,
+        .focus-card p {
             font-size: 15px;
             margin: 0;
         }
-
-        /* PHILANTHROPY VALUES */
 
         .values {
             display: grid;
@@ -256,8 +256,6 @@
             font-size: 14px;
             margin: 0;
         }
-
-        /* CONTACT */
 
         .contact-box {
             text-align: center;
@@ -325,6 +323,7 @@
             }
 
             .interests-grid,
+            .focus-grid,
             .values {
                 grid-template-columns: 1fr;
             }
@@ -345,6 +344,7 @@
             <a href="#about">About</a>
             <a href="#journey">My Journey</a>
             <a href="#interests">Interests</a>
+            <a href="#focus">Professional Focus</a>
             <a href="#philanthropy">Philanthropy</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -482,9 +482,7 @@
         <div class="interests-grid">
 
             <div class="interest-card">
-
                 <div class="interest-number">01</div>
-
                 <h3>Investment</h3>
 
                 <p>
@@ -492,14 +490,11 @@
                     economic trends, and the way thoughtful investment decisions
                     can contribute to sustainable growth.
                 </p>
-
             </div>
 
 
             <div class="interest-card">
-
                 <div class="interest-number">02</div>
-
                 <h3>Travel</h3>
 
                 <p>
@@ -507,14 +502,11 @@
                     perspectives, traditions, and ways of life while developing
                     a deeper appreciation for the world around us.
                 </p>
-
             </div>
 
 
             <div class="interest-card">
-
                 <div class="interest-number">03</div>
-
                 <h3>Philanthropy</h3>
 
                 <p>
@@ -522,14 +514,11 @@
                     opportunity, and create meaningful support for people and
                     causes that can benefit from thoughtful contribution.
                 </p>
-
             </div>
 
 
             <div class="interest-card">
-
                 <div class="interest-number">04</div>
-
                 <h3>Personal Growth</h3>
 
                 <p>
@@ -537,7 +526,68 @@
                     experiences are important parts of developing a broader
                     perspective and living with greater purpose.
                 </p>
+            </div>
 
+        </div>
+
+    </section>
+
+
+    <section id="focus">
+
+        <h2>Professional Focus</h2>
+
+        <p class="section-subtitle">
+            Areas that shape the way I think about business, markets, and long-term value.
+        </p>
+
+        <div class="focus-grid">
+
+            <div class="focus-card">
+                <div class="focus-number">01</div>
+                <h3>Markets & Investment</h3>
+
+                <p>
+                    I am interested in understanding how financial markets,
+                    economic conditions, business cycles, and investor behavior
+                    interact over time.
+                </p>
+            </div>
+
+
+            <div class="focus-card">
+                <div class="focus-number">02</div>
+                <h3>Long-Term Thinking</h3>
+
+                <p>
+                    I value patient decision-making, thoughtful analysis,
+                    disciplined risk awareness, and a focus on long-term
+                    outcomes rather than short-term noise.
+                </p>
+            </div>
+
+
+            <div class="focus-card">
+                <div class="focus-number">03</div>
+                <h3>Research & Perspective</h3>
+
+                <p>
+                    I believe good decisions begin with asking better questions,
+                    examining different perspectives, and continuing to learn
+                    as new information becomes available.
+                </p>
+            </div>
+
+
+            <div class="focus-card">
+                <div class="focus-number">04</div>
+                <h3>Responsible Growth</h3>
+
+                <p>
+                    Sustainable progress is built through thoughtful choices,
+                    adaptability, strong values, and a balance between opportunity,
+                    responsibility, and long-term impact.
+                </p>
             </div>
 
         </div>
