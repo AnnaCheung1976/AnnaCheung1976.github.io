@@ -46,7 +46,7 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 28px;
+            margin-left: 24px;
             font-size: 15px;
             transition: 0.3s;
         }
@@ -189,7 +189,48 @@
             font-size: 16px;
         }
 
-        /* VALUES */
+        /* INTERESTS */
+
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 850px;
+            margin: 40px auto 0;
+        }
+
+        .interest-card {
+            background: #f6f6f4;
+            padding: 34px 28px;
+            border-radius: 14px;
+            transition: 0.3s;
+            border: 1px solid #ececec;
+        }
+
+        .interest-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+        }
+
+        .interest-number {
+            font-size: 13px;
+            letter-spacing: 2px;
+            color: #888;
+            margin-bottom: 12px;
+        }
+
+        .interest-card h3 {
+            font-size: 23px;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .interest-card p {
+            font-size: 15px;
+            margin: 0;
+        }
+
+        /* PHILANTHROPY VALUES */
 
         .values {
             display: grid;
@@ -222,12 +263,6 @@
             text-align: center;
         }
 
-        .contact-box a {
-            color: #1f2937;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
         .contact-button {
             display: inline-block;
             margin-top: 15px;
@@ -252,7 +287,6 @@
         }
 
         @media (max-width: 768px) {
-
             header {
                 flex-direction: column;
                 gap: 14px;
@@ -264,7 +298,8 @@
             }
 
             nav a {
-                margin: 0 8px;
+                display: inline-block;
+                margin: 5px 7px;
                 font-size: 13px;
             }
 
@@ -289,6 +324,7 @@
                 font-size: 29px;
             }
 
+            .interests-grid,
             .values {
                 grid-template-columns: 1fr;
             }
@@ -302,37 +338,27 @@
 
 <body>
 
-    <!-- NAVIGATION -->
-
     <header>
-
-        <div class="logo">
-            Anna Cheung
-        </div>
+        <div class="logo">Anna Cheung</div>
 
         <nav>
             <a href="#about">About</a>
             <a href="#journey">My Journey</a>
+            <a href="#interests">Interests</a>
             <a href="#philanthropy">Philanthropy</a>
             <a href="#contact">Contact</a>
         </nav>
-
     </header>
 
 
-    <!-- HOME -->
-
     <section class="hero">
-
         <div class="hero-content">
 
             <div class="hero-small">
                 Personal Website
             </div>
 
-            <h1>
-                Anna Cheung
-            </h1>
+            <h1>Anna Cheung</h1>
 
             <p class="hero-description">
                 A personal space dedicated to growth, meaningful experiences,
@@ -344,11 +370,8 @@
             </a>
 
         </div>
-
     </section>
 
-
-    <!-- ABOUT -->
 
     <section id="about">
 
@@ -382,8 +405,6 @@
     </section>
 
 
-    <!-- JOURNEY -->
-
     <section id="journey">
 
         <h2>My Journey</h2>
@@ -395,7 +416,6 @@
         <div class="timeline">
 
             <div class="timeline-item">
-
                 <div class="timeline-dot"></div>
 
                 <h3>Learning & Discovery</h3>
@@ -405,12 +425,10 @@
                     I believe that learning from people, cultures, experiences,
                     and new ideas allows us to continually broaden our perspective.
                 </p>
-
             </div>
 
 
             <div class="timeline-item">
-
                 <div class="timeline-dot"></div>
 
                 <h3>Growth & Perspective</h3>
@@ -420,12 +438,10 @@
                     provides a chance to develop greater understanding, resilience,
                     and appreciation for what truly matters.
                 </p>
-
             </div>
 
 
             <div class="timeline-item">
-
                 <div class="timeline-dot"></div>
 
                 <h3>Purpose & Contribution</h3>
@@ -435,12 +451,10 @@
                     meaningful value, supporting others, and contributing in ways
                     that can have a positive and lasting impact.
                 </p>
-
             </div>
 
 
             <div class="timeline-item">
-
                 <div class="timeline-dot"></div>
 
                 <h3>Looking Forward</h3>
@@ -450,7 +464,6 @@
                     embracing new experiences, relationships, ideas, and
                     opportunities for growth.
                 </p>
-
             </div>
 
         </div>
@@ -458,7 +471,79 @@
     </section>
 
 
-    <!-- PHILANTHROPY -->
+    <section id="interests">
+
+        <h2>My Interests</h2>
+
+        <p class="section-subtitle">
+            The ideas and experiences that continue to shape my perspective.
+        </p>
+
+        <div class="interests-grid">
+
+            <div class="interest-card">
+
+                <div class="interest-number">01</div>
+
+                <h3>Investment</h3>
+
+                <p>
+                    I enjoy learning about financial markets, long-term value,
+                    economic trends, and the way thoughtful investment decisions
+                    can contribute to sustainable growth.
+                </p>
+
+            </div>
+
+
+            <div class="interest-card">
+
+                <div class="interest-number">02</div>
+
+                <h3>Travel</h3>
+
+                <p>
+                    Travel offers an opportunity to experience different cultures,
+                    perspectives, traditions, and ways of life while developing
+                    a deeper appreciation for the world around us.
+                </p>
+
+            </div>
+
+
+            <div class="interest-card">
+
+                <div class="interest-number">03</div>
+
+                <h3>Philanthropy</h3>
+
+                <p>
+                    I value initiatives that strengthen communities, expand
+                    opportunity, and create meaningful support for people and
+                    causes that can benefit from thoughtful contribution.
+                </p>
+
+            </div>
+
+
+            <div class="interest-card">
+
+                <div class="interest-number">04</div>
+
+                <h3>Personal Growth</h3>
+
+                <p>
+                    Continuous learning, self-reflection, curiosity, and new
+                    experiences are important parts of developing a broader
+                    perspective and living with greater purpose.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
 
     <section id="philanthropy">
 
@@ -483,43 +568,35 @@
         <div class="values">
 
             <div class="value-card">
-
                 <h3>Community</h3>
 
                 <p>
                     Supporting stronger and more connected communities.
                 </p>
-
             </div>
 
 
             <div class="value-card">
-
                 <h3>Opportunity</h3>
 
                 <p>
                     Helping create opportunities for people to learn and grow.
                 </p>
-
             </div>
 
 
             <div class="value-card">
-
                 <h3>Impact</h3>
 
                 <p>
                     Focusing on meaningful contributions with lasting value.
                 </p>
-
             </div>
 
         </div>
 
     </section>
 
-
-    <!-- CONTACT -->
 
     <section id="contact">
 
@@ -544,8 +621,6 @@
 
     </section>
 
-
-    <!-- FOOTER -->
 
     <footer>
         © 2026 Anna Cheung. All Rights Reserved.
