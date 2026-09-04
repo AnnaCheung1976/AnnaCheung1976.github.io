@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://annacheung1976.github.io/sitemap.xml
