@@ -27,17 +27,18 @@
         header {
             background: #1f2937;
             color: white;
-            padding: 24px 8%;
+            padding: 22px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         }
 
         .logo {
-            font-size: 26px;
+            font-size: 25px;
             font-weight: bold;
             letter-spacing: 1px;
         }
@@ -47,10 +48,11 @@
             text-decoration: none;
             margin-left: 28px;
             font-size: 15px;
+            transition: 0.3s;
         }
 
         nav a:hover {
-            opacity: 0.7;
+            opacity: 0.65;
         }
 
         .hero {
@@ -60,32 +62,40 @@
             justify-content: center;
             text-align: center;
             padding: 80px 20px;
-            background: linear-gradient(
-                rgba(255,255,255,0.72),
-                rgba(255,255,255,0.90)
-            );
+            background:
+                radial-gradient(circle at top left, #ffffff 0%, transparent 40%),
+                linear-gradient(135deg, #f4f2ed, #ffffff);
         }
 
         .hero-content {
-            max-width: 820px;
+            max-width: 850px;
+        }
+
+        .hero-small {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 13px;
+            color: #777;
+            margin-bottom: 18px;
         }
 
         .hero h1 {
-            font-size: 64px;
-            margin-bottom: 18px;
-            font-weight: 600;
+            font-size: 68px;
+            margin-bottom: 20px;
+            font-weight: 500;
             letter-spacing: 2px;
         }
 
-        .hero p {
-            font-size: 21px;
+        .hero-description {
+            font-size: 20px;
             color: #555;
-            margin-bottom: 30px;
+            max-width: 700px;
+            margin: 0 auto 32px;
         }
 
         .hero-button {
             display: inline-block;
-            padding: 13px 28px;
+            padding: 13px 30px;
             background: #1f2937;
             color: white;
             text-decoration: none;
@@ -95,70 +105,118 @@
 
         .hero-button:hover {
             transform: translateY(-2px);
-            opacity: 0.9;
+            box-shadow: 0 7px 18px rgba(0,0,0,0.15);
         }
 
         section {
-            max-width: 1100px;
+            max-width: 1050px;
             margin: 70px auto;
-            padding: 60px;
+            padding: 65px;
             background: white;
             border-radius: 18px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.05);
         }
 
         section h2 {
-            font-size: 34px;
-            margin-bottom: 22px;
+            font-size: 35px;
+            margin-bottom: 28px;
             text-align: center;
+            font-weight: 500;
         }
 
         section p {
             max-width: 800px;
-            margin: 0 auto 18px;
+            margin: 0 auto 20px;
             color: #555;
             font-size: 17px;
         }
 
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
-            margin-top: 35px;
+        .section-subtitle {
+            text-align: center;
+            color: #888;
+            margin-top: -18px;
+            margin-bottom: 40px;
         }
 
-        .gallery-card {
-            background: #f1f3f5;
-            border-radius: 14px;
-            overflow: hidden;
-            transition: 0.3s;
+        /* JOURNEY */
+
+        .timeline {
+            max-width: 780px;
+            margin: 45px auto 0;
+            position: relative;
         }
 
-        .gallery-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 19px;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background: #d7dbe0;
         }
 
-        .gallery-placeholder {
-            height: 260px;
-            background: #d9dde2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
+        .timeline-item {
+            position: relative;
+            padding-left: 65px;
+            margin-bottom: 45px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 11px;
+            top: 7px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #1f2937;
+            border: 4px solid #ffffff;
+            box-shadow: 0 0 0 2px #1f2937;
+        }
+
+        .timeline-item h3 {
+            font-size: 22px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .timeline-item p {
+            margin: 0;
             font-size: 16px;
         }
 
-        .gallery-card h3 {
-            padding: 18px 20px 5px;
-            font-size: 20px;
+        /* VALUES */
+
+        .values {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 850px;
+            margin: 40px auto 0;
         }
 
-        .gallery-card p {
-            padding: 0 20px 20px;
-            margin: 0;
-            font-size: 15px;
+        .value-card {
+            background: #f6f6f4;
+            padding: 30px 22px;
+            border-radius: 12px;
+            text-align: center;
         }
+
+        .value-card h3 {
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .value-card p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* CONTACT */
 
         .contact-box {
             text-align: center;
@@ -170,39 +228,73 @@
             font-weight: bold;
         }
 
+        .contact-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 26px;
+            border: 1px solid #1f2937;
+            border-radius: 30px;
+            color: #1f2937;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .contact-button:hover {
+            background: #1f2937;
+            color: white;
+        }
+
         footer {
             text-align: center;
-            padding: 35px 20px;
+            padding: 40px 20px;
             color: #777;
             font-size: 14px;
         }
 
         @media (max-width: 768px) {
+
             header {
                 flex-direction: column;
-                gap: 15px;
+                gap: 14px;
+                padding: 18px 10px;
+            }
+
+            nav {
+                text-align: center;
             }
 
             nav a {
-                margin: 0 10px;
-                font-size: 14px;
+                margin: 0 8px;
+                font-size: 13px;
+            }
+
+            .hero {
+                min-height: 68vh;
             }
 
             .hero h1 {
-                font-size: 42px;
+                font-size: 44px;
             }
 
-            .hero p {
-                font-size: 18px;
+            .hero-description {
+                font-size: 17px;
             }
 
             section {
                 margin: 35px 15px;
-                padding: 35px 22px;
+                padding: 40px 24px;
             }
 
-            .gallery-grid {
+            section h2 {
+                font-size: 29px;
+            }
+
+            .values {
                 grid-template-columns: 1fr;
+            }
+
+            .timeline-item {
+                padding-left: 55px;
             }
         }
     </style>
@@ -210,41 +302,62 @@
 
 <body>
 
+    <!-- NAVIGATION -->
+
     <header>
-        <div class="logo">Anna Cheung</div>
+
+        <div class="logo">
+            Anna Cheung
+        </div>
 
         <nav>
             <a href="#about">About</a>
-            <a href="#gallery">My Gallery</a>
+            <a href="#journey">My Journey</a>
             <a href="#philanthropy">Philanthropy</a>
             <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Anna Cheung</h1>
+    <!-- HOME -->
 
-            <p>
-                Welcome to my personal website.
-                A space for my journey, interests, experiences, and meaningful work.
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-small">
+                Personal Website
+            </div>
+
+            <h1>
+                Anna Cheung
+            </h1>
+
+            <p class="hero-description">
+                A personal space dedicated to growth, meaningful experiences,
+                thoughtful perspectives, and creating a positive impact.
             </p>
 
             <a class="hero-button" href="#about">
-                Explore More
+                Discover My Journey
             </a>
+
         </div>
+
     </section>
 
 
+    <!-- ABOUT -->
+
     <section id="about">
+
         <h2>About Me</h2>
 
         <p>
-            Welcome to my personal website. I created this space to share a
-            little about my journey, the experiences that have shaped me, and
-            the values that continue to guide my life.
+            Welcome to my personal website. I created this space to share
+            a little about my journey, the experiences that have shaped me,
+            and the values that continue to guide my life.
         </p>
 
         <p>
@@ -256,127 +369,183 @@
 
         <p>
             My interests include travel, personal development, business,
-            investment, philanthropy, and discovering new ideas that can create
-            meaningful and lasting value.
+            investment, philanthropy, and discovering new ideas that can
+            create meaningful and lasting value.
         </p>
 
         <p>
-            Above all, I believe that success is not only measured by personal
-            achievement, but also by the positive impact we are able to make
-            on the people and communities around us.
+            Above all, I believe that success is not only measured by
+            personal achievement, but also by the positive impact we are
+            able to make on the people and communities around us.
         </p>
+
     </section>
 
 
-    <section id="gallery">
-        <h2>My Gallery</h2>
+    <!-- JOURNEY -->
 
-        <p>
-            A collection of moments, places, experiences, and memories that
-            have been meaningful throughout my journey.
+    <section id="journey">
+
+        <h2>My Journey</h2>
+
+        <p class="section-subtitle">
+            Growth is not a destination. It is a lifelong journey.
         </p>
 
-        <div class="gallery-grid">
+        <div class="timeline">
 
-            <div class="gallery-card">
-                <div class="gallery-placeholder">
-                    Photo 1
-                </div>
+            <div class="timeline-item">
 
-                <h3>Travel</h3>
+                <div class="timeline-dot"></div>
+
+                <h3>Learning & Discovery</h3>
 
                 <p>
-                    Places, cultures, and memorable journeys.
+                    Curiosity has always been an important part of my life.
+                    I believe that learning from people, cultures, experiences,
+                    and new ideas allows us to continually broaden our perspective.
                 </p>
+
             </div>
 
 
-            <div class="gallery-card">
-                <div class="gallery-placeholder">
-                    Photo 2
-                </div>
+            <div class="timeline-item">
 
-                <h3>Life</h3>
+                <div class="timeline-dot"></div>
+
+                <h3>Growth & Perspective</h3>
 
                 <p>
-                    Everyday moments and personal experiences.
+                    Life brings both opportunities and challenges. Each experience
+                    provides a chance to develop greater understanding, resilience,
+                    and appreciation for what truly matters.
                 </p>
+
             </div>
 
 
-            <div class="gallery-card">
-                <div class="gallery-placeholder">
-                    Photo 3
-                </div>
+            <div class="timeline-item">
 
-                <h3>Inspiration</h3>
+                <div class="timeline-dot"></div>
+
+                <h3>Purpose & Contribution</h3>
 
                 <p>
-                    Moments and ideas that inspire me.
+                    Over time, my journey has increasingly focused on creating
+                    meaningful value, supporting others, and contributing in ways
+                    that can have a positive and lasting impact.
                 </p>
+
             </div>
 
 
-            <div class="gallery-card">
-                <div class="gallery-placeholder">
-                    Photo 4
-                </div>
+            <div class="timeline-item">
 
-                <h3>Projects</h3>
+                <div class="timeline-dot"></div>
+
+                <h3>Looking Forward</h3>
 
                 <p>
-                    Selected projects and meaningful work.
+                    I continue to approach the future with curiosity and optimism,
+                    embracing new experiences, relationships, ideas, and
+                    opportunities for growth.
                 </p>
+
             </div>
 
         </div>
+
     </section>
 
+
+    <!-- PHILANTHROPY -->
 
     <section id="philanthropy">
+
         <h2>Philanthropy</h2>
 
-        <p>
-            I believe that meaningful success includes the ability to help
-            others and contribute to the community.
+        <p class="section-subtitle">
+            Creating value that extends beyond ourselves.
         </p>
 
         <p>
-            Through philanthropy, charitable initiatives, and community
-            involvement, I hope to support causes that create lasting and
-            positive change.
+            I believe that meaningful success includes the ability to
+            contribute to the lives of others and strengthen the communities
+            around us.
         </p>
 
         <p>
-            I value efforts that improve opportunities, strengthen communities,
-            and create meaningful support for people who need it most.
+            Philanthropy is not only about giving. It is also about understanding,
+            compassion, responsibility, and supporting opportunities that can
+            create sustainable positive change.
         </p>
+
+        <div class="values">
+
+            <div class="value-card">
+
+                <h3>Community</h3>
+
+                <p>
+                    Supporting stronger and more connected communities.
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <h3>Opportunity</h3>
+
+                <p>
+                    Helping create opportunities for people to learn and grow.
+                </p>
+
+            </div>
+
+
+            <div class="value-card">
+
+                <h3>Impact</h3>
+
+                <p>
+                    Focusing on meaningful contributions with lasting value.
+                </p>
+
+            </div>
+
+        </div>
+
     </section>
 
 
+    <!-- CONTACT -->
+
     <section id="contact">
+
         <h2>Contact</h2>
 
         <div class="contact-box">
 
             <p>
-                Thank you for visiting my website.
+                Thank you for taking the time to visit my website.
             </p>
 
             <p>
-                For inquiries or opportunities to connect, please feel free to contact me.
+                For inquiries or opportunities to connect,
+                please feel free to get in touch.
             </p>
 
-            <p>
-                Phone:
-                <a href="tel:+11234567890">
-                    +1 (123) 456-7890
-                </a>
-            </p>
+            <a class="contact-button" href="tel:+11234567890">
+                Contact Me
+            </a>
 
         </div>
+
     </section>
 
+
+    <!-- FOOTER -->
 
     <footer>
         © 2026 Anna Cheung. All Rights Reserved.
