@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Anna Cheung | Personal Website</title>
+
+    <meta name="description"
+          content="Learn more about Anna Cheung, her interests in investment, travel, philanthropy, personal growth, and her long-term perspective on meaningful impact.">
+
+    <meta name="author" content="Anna Cheung">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+          href="https://annacheung1976.github.io/about.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+          content="About Anna Cheung | Personal Website">
+
+    <meta property="og:description"
+          content="Learn more about Anna Cheung, her interests, perspectives, values, and personal journey.">
+
+    <meta property="og:type" content="profile">
+
+    <meta property="og:url"
+          content="https://annacheung1976.github.io/about.html">
+
+    <meta property="og:site_name"
+          content="Anna Cheung">
+
+    <!-- Person Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://annacheung1976.github.io/#person",
+      "name": "Anna Cheung",
+      "url": "https://annacheung1976.github.io/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://annacheung1976.github.io/about.html"
+      },
+      "description": "Anna Cheung's personal website featuring perspectives on investment, travel, philanthropy, personal growth, and meaningful impact."
+    }
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #f5f2ec;
+            color: #2b2926;
+            line-height: 1.8;
+        }
+
+        header {
+            background: #242321;
+            color: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .nav-container {
+            max-width: 1180px;
+            margin: auto;
+            padding: 18px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            gap: 26px;
+        }
+
+        nav a {
+            color: #e8e4dd;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+        }
+
+        nav a:hover {
+            opacity: 0.65;
+        }
+
+        .hero {
+            min-height: 430px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 25px;
+            background: #eee9e1;
+        }
+
+        .hero-inner {
+            max-width: 800px;
+        }
+
+        .hero-label {
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 11px;
+            color: #8b8173;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            font-weight: normal;
+            line-height: 1.15;
+            margin-bottom: 22px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #6d665d;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 90px 25px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .content {
+            background: #ffffff;
+        }
+
+        .content-block {
+            max-width: 760px;
+            margin: auto;
+        }
+
+        .content-block h2 {
+            font-size: 36px;
+            font-weight: normal;
+            margin-bottom: 25px;
+            color: #292723;
+        }
+
+        .content-block p {
+            font-size: 18px;
+            color: #615b53;
+            margin-bottom: 24px;
+        }
+
+        .values {
+            background: #f5f2ec;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-label {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #978b7a;
+            margin-bottom: 12px;
+        }
+
+        .section-header h2 {
+            font-size: 40px;
+            font-weight: normal;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e4ddd2;
+            padding: 35px;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #746d64;
+            font-size: 15px;
+        }
+
+        .perspective {
+            background: #292825;
+            color: #ffffff;
+        }
+
+        .perspective .content-block h2 {
+            color: #ffffff;
+        }
+
+        .perspective .content-block p {
+            color: #c3bcb2;
+        }
+
+        .back-home {
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 30px;
+            border: 1px solid #292825;
+            color: #292825;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            letter-spacing: 1px;
+            transition: all 0.2s ease;
+        }
+
+        .button:hover {
+            background: #292825;
+            color: #ffffff;
+        }
+
+        footer {
+            background: #242321;
+            color: #aaa39a;
+            text-align: center;
+            padding: 30px 20px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        @media (max-width: 800px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 44px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 65px 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav-container">
+
+        <div class="logo">
+            <a href="index.html">Anna Cheung</a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#interests">Interests</a>
+            <a href="index.html#philanthropy">Philanthropy</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <div class="hero-inner">
+
+            <div class="hero-label">
+                About
+            </div>
+
+            <h1>About Anna Cheung</h1>
+
+            <p>
+                A personal journey shaped by curiosity,
+                thoughtful learning, long-term perspective,
+                and a desire to create meaningful impact.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="content">
+
+        <div class="container">
+
+            <div class="content-block">
+
+                <h2>A Personal Perspective</h2>
+
+                <p>
+                    I believe that growth begins with curiosity.
+                    Understanding the world requires a willingness
+                    to continue learning, consider different
+                    perspectives, and remain open to new ideas.
+                </p>
+
+                <p>
+                    My interests include investment, travel,
+                    philanthropy, and personal growth. While these
+                    areas may appear different, each offers a way
+                    to better understand people, opportunity,
+                    responsibility, and the world around us.
+                </p>
+
+                <p>
+                    I value thoughtful decision-making and a
+                    long-term perspective. Whether considering
+                    financial markets, personal development,
+                    or meaningful ways to contribute to others,
+                    I believe lasting value is rarely created
+                    through short-term thinking.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="values">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">
+                    Interests & Values
+                </div>
+
+                <h2>What Matters to Me</h2>
+
+            </div>
+
+            <div class="grid">
+
+                <div class="card">
+
+                    <h3>Investment</h3>
+
+                    <p>
+                        An interest in markets, economic trends,
+                        long-term value, and thoughtful approaches
+                        to capital and opportunity.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Travel</h3>
+
+                    <p>
+                        Exploring different places and cultures
+                        as a way to discover new perspectives
+                        and better understand the world.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Philanthropy</h3>
+
+                    <p>
+                        A belief in using resources and opportunity
+                        thoughtfully to support meaningful and
+                        lasting positive impact.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Personal Growth</h3>
+
+                    <p>
+                        Continuous learning, reflection,
+                        self-improvement, and the pursuit
+                        of a purposeful and balanced life.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="perspective">
+
+        <div class="container">
+
+            <div class="content-block">
+
+                <h2>Looking Forward</h2>
+
+                <p>
+                    Life is an ongoing process of learning,
+                    adapting, and discovering what truly matters.
+                    I continue to explore ideas and experiences
+                    that encourage thoughtful growth and
+                    meaningful connections.
+                </p>
+
+                <p>
+                    This website is a personal space to share
+                    some of those interests, perspectives,
+                    and values as that journey continues.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="back-home">
+
+        <div class="container">
+
+            <a class="button" href="index.html">
+                Return to Home
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    © 2026 Anna Cheung. All rights reserved.
+</footer>
+
+</body>
+</html>
