@@ -7,7 +7,7 @@
     <title>Investment | Anna Cheung</title>
 
     <meta name="description"
-          content="Explore Anna Cheung's perspective on investment, markets, economic trends, long-term value, research, and thoughtful decision-making.">
+          content="Anna Cheung's personal perspective on investing, long-term thinking, global trends, judgment, patience, risk, and choosing the future.">
 
     <meta name="author" content="Anna Cheung">
     <meta name="robots" content="index, follow">
@@ -19,10 +19,9 @@
           content="Investment | Anna Cheung">
 
     <meta property="og:description"
-          content="Anna Cheung's perspective on markets, long-term value, research, economic trends, and thoughtful investing.">
+          content="Anna Cheung's personal perspective on investing, long-term thinking, global trends, judgment, patience, and responsible decision-making.">
 
-    <meta property="og:type"
-          content="website">
+    <meta property="og:type" content="website">
 
     <meta property="og:url"
           content="https://annacheung1976.github.io/investment.html">
@@ -37,7 +36,7 @@
       "@id": "https://annacheung1976.github.io/investment.html#webpage",
       "url": "https://annacheung1976.github.io/investment.html",
       "name": "Investment | Anna Cheung",
-      "description": "Anna Cheung's perspective on investment, markets, economic trends, long-term value, research, and thoughtful decision-making.",
+      "description": "Anna Cheung's personal perspective on investing, long-term thinking, global trends, judgment, patience, and responsible decision-making.",
       "about": {
         "@id": "https://annacheung1976.github.io/#person"
       }
@@ -45,6 +44,7 @@
     </script>
 
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -72,7 +72,7 @@
         }
 
         .nav-container {
-            max-width: 1180px;
+            max-width: 1250px;
             margin: auto;
             padding: 18px 30px;
             display: flex;
@@ -89,7 +89,8 @@
 
         nav {
             display: flex;
-            gap: 26px;
+            align-items: center;
+            gap: 24px;
         }
 
         nav a {
@@ -97,8 +98,9 @@
             text-decoration: none;
             font-family: Arial, sans-serif;
             font-size: 13px;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.4px;
             transition: opacity 0.2s ease;
+            white-space: nowrap;
         }
 
         nav a:hover {
@@ -112,11 +114,11 @@
             justify-content: center;
             text-align: center;
             padding: 90px 25px;
-            background: #eee9e1;
+            background: #f3efe9;
         }
 
         .hero-inner {
-            max-width: 820px;
+            max-width: 850px;
         }
 
         .hero-label {
@@ -137,10 +139,10 @@
         }
 
         .hero p {
-            max-width: 680px;
+            max-width: 720px;
             margin: auto;
-            color: #6d665d;
-            font-size: 18px;
+            color: #655f57;
+            font-size: 19px;
         }
 
         section {
@@ -154,7 +156,7 @@
 
         .section-header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 48px;
         }
 
         .section-label {
@@ -173,20 +175,13 @@
             margin-bottom: 14px;
         }
 
-        .section-header p {
-            max-width: 680px;
-            margin: auto;
-            color: #777067;
-        }
-
         .intro {
             background: #ffffff;
         }
 
         .intro-content {
-            max-width: 780px;
+            max-width: 800px;
             margin: auto;
-            text-align: center;
         }
 
         .intro-content p {
@@ -195,7 +190,22 @@
             margin-bottom: 22px;
         }
 
-        .focus {
+        .quote {
+            margin: 40px 0;
+            padding: 30px 35px;
+            border-left: 2px solid #9c8f7e;
+            background: #f7f4ef;
+        }
+
+        .quote p {
+            font-size: 24px;
+            line-height: 1.6;
+            color: #403c37;
+            margin: 0;
+            font-style: italic;
+        }
+
+        .principles {
             background: #f5f2ec;
         }
 
@@ -209,19 +219,20 @@
             background: #ffffff;
             border: 1px solid #e4ddd2;
             padding: 38px;
-            transition: transform 0.2s ease,
-                        box-shadow 0.2s ease;
         }
 
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+        .card-number {
+            font-family: Arial, sans-serif;
+            color: #a09484;
+            font-size: 11px;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
         }
 
         .card h3 {
             font-size: 23px;
             font-weight: normal;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
 
         .card p {
@@ -229,43 +240,56 @@
             font-size: 15px;
         }
 
-        .philosophy {
+        .future {
             background: #292825;
             color: #ffffff;
         }
 
-        .philosophy-content {
-            max-width: 780px;
+        .future-content {
+            max-width: 800px;
             margin: auto;
             text-align: center;
         }
 
-        .philosophy-content h2 {
+        .future .section-label {
+            color: #b5aa9b;
+        }
+
+        .future h2 {
             font-size: 40px;
             font-weight: normal;
             margin-bottom: 28px;
         }
 
-        .philosophy-content p {
+        .future p {
             color: #c3bcb2;
             font-size: 18px;
             margin-bottom: 22px;
         }
 
-        .research {
+        .perspective {
             background: #eee9e1;
         }
 
-        .research-content {
-            max-width: 780px;
+        .perspective-content {
+            max-width: 800px;
             margin: auto;
-            text-align: center;
         }
 
-        .research-content p {
+        .perspective-content p {
             color: #615b53;
             font-size: 18px;
             margin-bottom: 22px;
+        }
+
+        .disclaimer {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid #d5cec4;
+            color: #898176;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.7;
         }
 
         .page-navigation {
@@ -306,7 +330,8 @@
             font-size: 12px;
         }
 
-        @media (max-width: 850px) {
+        @media (max-width: 950px) {
+
             .nav-container {
                 flex-direction: column;
                 gap: 14px;
@@ -318,12 +343,8 @@
                 gap: 12px 18px;
             }
 
-            .hero {
-                min-height: 430px;
-            }
-
             .hero h1 {
-                font-size: 44px;
+                font-size: 46px;
             }
 
             .cards {
@@ -335,51 +356,87 @@
             }
 
             .section-header h2,
-            .philosophy-content h2 {
+            .future h2 {
                 font-size: 34px;
             }
         }
+
+        @media (max-width: 550px) {
+
+            .nav-container {
+                padding: 16px 18px;
+            }
+
+            nav {
+                gap: 9px 14px;
+            }
+
+            nav a {
+                font-size: 11px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .card {
+                padding: 28px;
+            }
+
+            .quote p {
+                font-size: 21px;
+            }
+        }
+
     </style>
 </head>
 
 <body>
 
+
 <header>
+
     <div class="nav-container">
 
         <div class="logo">
             <a href="index.html">Anna Cheung</a>
         </div>
 
-       <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="investment.html">Investment</a>
-    <a href="travel.html">Travel</a>
-    <a href="personal-growth.html">Personal Growth</a>
-    <a href="philanthropy.html">Philanthropy</a>
-    <a href="index.html#contact">Contact</a>
-</nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="investment.html">Investment</a>
+            <a href="travel.html">Travel</a>
+            <a href="personal-growth.html">Personal Growth</a>
+            <a href="philanthropy.html">Philanthropy</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
 
     </div>
+
 </header>
 
+
 <main>
+
+
+    <!-- HERO -->
 
     <section class="hero">
 
         <div class="hero-inner">
 
             <div class="hero-label">
-                Markets & Perspective
+                Investment
             </div>
 
-            <h1>Investment</h1>
+            <h1>Choosing the Future</h1>
 
             <p>
-                Exploring markets, economic change,
-                long-term value, research, and the principles
-                behind thoughtful financial decision-making.
+                To me, investing is not simply about numbers.
+                It is about understanding change, forming a view
+                of the future, and having the patience to allow
+                thoughtful decisions to develop over time.
             </p>
 
         </div>
@@ -387,7 +444,244 @@
     </section>
 
 
+    <!-- PHILOSOPHY -->
+
     <section class="intro">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">
+                    My Perspective
+                </div>
+
+                <h2>Why I Invest</h2>
+
+            </div>
+
+
+            <div class="intro-content">
+
+                <p>
+                    For me, investing is about choosing the future.
+                    I enjoy observing what is happening in the world
+                    and thinking about what may become more important
+                    over the next five or ten years.
+                </p>
+
+                <p>
+                    Markets reflect far more than prices. They are
+                    influenced by technology, economics, demographics,
+                    policy, human behavior, innovation, and the way
+                    society changes over time.
+                </p>
+
+                <div class="quote">
+
+                    <p>
+                        “Making money is the result. What truly attracts
+                        me is judgment, patience, and long-term growth.”
+                    </p>
+
+                </div>
+
+                <p>
+                    I believe thoughtful investing requires the
+                    willingness to study change, form independent
+                    opinions, accept uncertainty, and remain patient
+                    when the world becomes noisy.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRINCIPLES -->
+
+    <section class="principles">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">
+                    Principles
+                </div>
+
+                <h2>How I Think About Investing</h2>
+
+            </div>
+
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <h3>Understand the World</h3>
+
+                    <p>
+                        Before thinking about an investment, I want
+                        to understand what is changing in the broader
+                        world. Economic conditions, technology,
+                        consumer behavior, policy, and global events
+                        can all shape the opportunities of tomorrow.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+                    <h3>Think Long Term</h3>
+
+                    <p>
+                        Short-term markets can be driven by emotion
+                        and noise. I am more interested in asking
+                        what may matter five or ten years from now,
+                        and which changes may prove durable rather
+                        than temporary.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        03
+                    </div>
+
+                    <h3>Exercise Judgment</h3>
+
+                    <p>
+                        Information alone is not enough. Investing
+                        requires judgment: deciding what matters,
+                        what may already be reflected in expectations,
+                        and where reality could develop differently
+                        from the prevailing view.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        04
+                    </div>
+
+                    <h3>Practice Patience</h3>
+
+                    <p>
+                        A good idea does not always produce immediate
+                        results. Patience means giving a thoughtful
+                        decision time while remaining willing to
+                        reconsider when the underlying facts change.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        05
+                    </div>
+
+                    <h3>Respect Risk</h3>
+
+                    <p>
+                        Uncertainty is part of investing. I believe
+                        confidence should always be balanced with
+                        humility, discipline, and an awareness that
+                        even a carefully considered view can be wrong.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        06
+                    </div>
+
+                    <h3>Keep Learning</h3>
+
+                    <p>
+                        Markets constantly challenge our assumptions.
+                        I see investing as an ongoing process of
+                        learning, observing, questioning, and refining
+                        the way I understand both markets and the world.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FUTURE -->
+
+    <section class="future">
+
+        <div class="container">
+
+            <div class="future-content">
+
+                <div class="section-label">
+                    Long-Term Thinking
+                </div>
+
+                <h2>Looking Beyond the Next Quarter</h2>
+
+                <p>
+                    One of the questions I find most interesting is
+                    simple: what will matter more in the future than
+                    it does today?
+                </p>
+
+                <p>
+                    Thinking this way encourages me to look beyond
+                    short-term price movements and consider the larger
+                    forces shaping economies, industries, businesses,
+                    and society.
+                </p>
+
+                <p>
+                    The future is never completely predictable.
+                    That uncertainty is precisely why judgment,
+                    patience, adaptability, and disciplined thinking
+                    matter.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PERSONAL PERSPECTIVE -->
+
+    <section class="perspective">
 
         <div class="container">
 
@@ -397,103 +691,40 @@
                     Perspective
                 </div>
 
-                <h2>Understanding Value</h2>
+                <h2>More Than a Financial Outcome</h2>
 
             </div>
 
-            <div class="intro-content">
+
+            <div class="perspective-content">
 
                 <p>
-                    Investment is not only about price movement.
-                    It is also about understanding businesses,
-                    markets, economic conditions, risk,
-                    and the factors that can influence value over time.
+                    Financial returns matter, but they are not the
+                    only reason investing interests me. Investing
+                    gives me a reason to continuously learn about
+                    economics, innovation, businesses, people,
+                    and the forces changing our world.
                 </p>
 
                 <p>
-                    I am interested in approaching markets
-                    with curiosity, discipline, and a willingness
-                    to look beyond short-term noise.
+                    Ultimately, I see capital as a tool. Used
+                    thoughtfully, it can help create independence,
+                    support long-term goals, provide security for
+                    the people we care about, and give us greater
+                    freedom to decide how we want to live.
                 </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="focus">
-
-        <div class="container">
-
-            <div class="section-header">
-
-                <div class="section-label">
-                    Areas of Interest
-                </div>
-
-                <h2>Investment Perspective</h2>
 
                 <p>
-                    Several areas continue to shape
-                    the way I think about markets and value.
+                    That combination of curiosity, responsibility,
+                    judgment, and long-term thinking is what continues
+                    to make investing meaningful to me.
                 </p>
 
-            </div>
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <h3>Markets</h3>
-
-                    <p>
-                        Following financial markets and
-                        understanding how expectations,
-                        liquidity, sentiment, and economic
-                        conditions influence asset prices.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <h3>Economic Trends</h3>
-
-                    <p>
-                        Studying inflation, interest rates,
-                        employment, growth, and other
-                        macroeconomic forces that can
-                        shape financial conditions.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <h3>Long-Term Value</h3>
-
-                    <p>
-                        Looking beyond short-term fluctuations
-                        to consider durability, fundamentals,
-                        opportunity, and the ability to create
-                        value over longer periods.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <h3>Risk & Discipline</h3>
-
-                    <p>
-                        Recognizing that uncertainty is
-                        a natural part of investing and
-                        that thoughtful risk management
-                        is essential to long-term decision-making.
-                    </p>
-
+                <div class="disclaimer">
+                    This page reflects my personal perspectives and
+                    interests. It is provided for general informational
+                    purposes only and should not be considered investment
+                    or financial advice.
                 </div>
 
             </div>
@@ -503,71 +734,7 @@
     </section>
 
 
-    <section class="philosophy">
-
-        <div class="container">
-
-            <div class="philosophy-content">
-
-                <h2>Long-Term Thinking</h2>
-
-                <p>
-                    Markets can move quickly, but meaningful
-                    investment decisions often require patience.
-                    Short-term headlines and price movements
-                    do not always reflect long-term value.
-                </p>
-
-                <p>
-                    I value an approach centered on research,
-                    perspective, discipline, and the ability
-                    to remain thoughtful during periods
-                    of uncertainty.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="research">
-
-        <div class="container">
-
-            <div class="section-header">
-
-                <div class="section-label">
-                    Research
-                </div>
-
-                <h2>Learning From the Market</h2>
-
-            </div>
-
-            <div class="research-content">
-
-                <p>
-                    Financial markets are constantly evolving.
-                    Technology, policy, global events,
-                    capital flows, and changing expectations
-                    can all influence the investment environment.
-                </p>
-
-                <p>
-                    Continuous learning and considering
-                    different perspectives can help build
-                    a more balanced understanding of
-                    both opportunity and risk.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
+    <!-- PAGE NAVIGATION -->
 
     <section class="page-navigation">
 
@@ -583,6 +750,14 @@
                     About Anna
                 </a>
 
+                <a class="button" href="travel.html">
+                    Travel
+                </a>
+
+                <a class="button" href="personal-growth.html">
+                    Personal Growth
+                </a>
+
                 <a class="button" href="philanthropy.html">
                     Philanthropy
                 </a>
@@ -593,11 +768,14 @@
 
     </section>
 
+
 </main>
+
 
 <footer>
     © 2026 Anna Cheung. All rights reserved.
 </footer>
+
 
 </body>
 </html>
