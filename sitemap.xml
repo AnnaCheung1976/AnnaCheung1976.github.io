@@ -14,4 +14,10 @@
         <priority>0.8</priority>
     </url>
 
+    <url>
+        <loc>https://annacheung1976.github.io/philanthropy.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>
