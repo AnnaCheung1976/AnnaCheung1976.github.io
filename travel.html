@@ -7,7 +7,7 @@
     <title>Travel | Anna Cheung</title>
 
     <meta name="description"
-          content="Explore Anna Cheung's perspective on travel, culture, discovery, personal growth, and seeing the world through different perspectives.">
+          content="Anna Cheung's personal perspective on travel, culture, discovery, understanding different ways of life, and seeing the world with greater curiosity and respect.">
 
     <meta name="author" content="Anna Cheung">
     <meta name="robots" content="index, follow">
@@ -19,7 +19,7 @@
           content="Travel | Anna Cheung">
 
     <meta property="og:description"
-          content="Anna Cheung's perspective on travel, culture, discovery, and the value of seeing the world from different viewpoints.">
+          content="Anna Cheung's personal perspective on travel, culture, discovery, curiosity, and understanding the world through experience.">
 
     <meta property="og:type" content="website">
 
@@ -36,7 +36,7 @@
       "@id": "https://annacheung1976.github.io/travel.html#webpage",
       "url": "https://annacheung1976.github.io/travel.html",
       "name": "Travel | Anna Cheung",
-      "description": "Anna Cheung's perspective on travel, culture, discovery, personal growth, and seeing the world through different perspectives.",
+      "description": "Anna Cheung's personal perspective on travel, culture, discovery, curiosity, and understanding the world through experience.",
       "about": {
         "@id": "https://annacheung1976.github.io/#person"
       }
@@ -44,6 +44,7 @@
     </script>
 
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -71,7 +72,7 @@
         }
 
         .nav-container {
-            max-width: 1180px;
+            max-width: 1250px;
             margin: auto;
             padding: 18px 30px;
             display: flex;
@@ -88,7 +89,8 @@
 
         nav {
             display: flex;
-            gap: 26px;
+            align-items: center;
+            gap: 24px;
         }
 
         nav a {
@@ -96,8 +98,9 @@
             text-decoration: none;
             font-family: Arial, sans-serif;
             font-size: 13px;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.4px;
             transition: opacity 0.2s ease;
+            white-space: nowrap;
         }
 
         nav a:hover {
@@ -111,11 +114,11 @@
             justify-content: center;
             text-align: center;
             padding: 90px 25px;
-            background: #eee9e1;
+            background: #f3efe9;
         }
 
         .hero-inner {
-            max-width: 820px;
+            max-width: 850px;
         }
 
         .hero-label {
@@ -136,10 +139,10 @@
         }
 
         .hero p {
-            max-width: 680px;
+            max-width: 720px;
             margin: auto;
-            color: #6d665d;
-            font-size: 18px;
+            color: #655f57;
+            font-size: 19px;
         }
 
         section {
@@ -153,7 +156,7 @@
 
         .section-header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 48px;
         }
 
         .section-label {
@@ -172,26 +175,34 @@
             margin-bottom: 14px;
         }
 
-        .section-header p {
-            max-width: 680px;
-            margin: auto;
-            color: #777067;
-        }
-
         .intro {
             background: #ffffff;
         }
 
         .intro-content {
-            max-width: 780px;
+            max-width: 800px;
             margin: auto;
-            text-align: center;
         }
 
         .intro-content p {
             color: #615b53;
             font-size: 18px;
             margin-bottom: 22px;
+        }
+
+        .quote {
+            margin: 40px 0;
+            padding: 30px 35px;
+            border-left: 2px solid #9c8f7e;
+            background: #f7f4ef;
+        }
+
+        .quote p {
+            font-size: 24px;
+            line-height: 1.6;
+            color: #403c37;
+            margin: 0;
+            font-style: italic;
         }
 
         .perspectives {
@@ -208,19 +219,20 @@
             background: #ffffff;
             border: 1px solid #e4ddd2;
             padding: 38px;
-            transition: transform 0.2s ease,
-                        box-shadow 0.2s ease;
         }
 
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+        .card-number {
+            font-family: Arial, sans-serif;
+            color: #a09484;
+            font-size: 11px;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
         }
 
         .card h3 {
             font-size: 23px;
             font-weight: normal;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
 
         .card p {
@@ -228,40 +240,43 @@
             font-size: 15px;
         }
 
-        .meaning {
+        .world {
             background: #292825;
             color: #ffffff;
         }
 
-        .meaning-content {
-            max-width: 780px;
+        .world-content {
+            max-width: 800px;
             margin: auto;
             text-align: center;
         }
 
-        .meaning-content h2 {
+        .world .section-label {
+            color: #b5aa9b;
+        }
+
+        .world h2 {
             font-size: 40px;
             font-weight: normal;
             margin-bottom: 28px;
         }
 
-        .meaning-content p {
+        .world p {
             color: #c3bcb2;
             font-size: 18px;
             margin-bottom: 22px;
         }
 
-        .growth {
+        .reflection {
             background: #eee9e1;
         }
 
-        .growth-content {
-            max-width: 780px;
+        .reflection-content {
+            max-width: 800px;
             margin: auto;
-            text-align: center;
         }
 
-        .growth-content p {
+        .reflection-content p {
             color: #615b53;
             font-size: 18px;
             margin-bottom: 22px;
@@ -305,7 +320,7 @@
             font-size: 12px;
         }
 
-        @media (max-width: 850px) {
+        @media (max-width: 950px) {
 
             .nav-container {
                 flex-direction: column;
@@ -318,12 +333,8 @@
                 gap: 12px 18px;
             }
 
-            .hero {
-                min-height: 430px;
-            }
-
             .hero h1 {
-                font-size: 44px;
+                font-size: 46px;
             }
 
             .cards {
@@ -335,57 +346,95 @@
             }
 
             .section-header h2,
-            .meaning-content h2 {
+            .world h2 {
                 font-size: 34px;
             }
         }
+
+        @media (max-width: 550px) {
+
+            .nav-container {
+                padding: 16px 18px;
+            }
+
+            nav {
+                gap: 9px 14px;
+            }
+
+            nav a {
+                font-size: 11px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .card {
+                padding: 28px;
+            }
+
+            .quote p {
+                font-size: 21px;
+            }
+        }
+
     </style>
 </head>
 
 <body>
 
+
 <header>
+
     <div class="nav-container">
 
         <div class="logo">
             <a href="index.html">Anna Cheung</a>
         </div>
 
-       <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="investment.html">Investment</a>
-    <a href="travel.html">Travel</a>
-    <a href="personal-growth.html">Personal Growth</a>
-    <a href="philanthropy.html">Philanthropy</a>
-    <a href="index.html#contact">Contact</a>
-</nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="investment.html">Investment</a>
+            <a href="travel.html">Travel</a>
+            <a href="personal-growth.html">Personal Growth</a>
+            <a href="philanthropy.html">Philanthropy</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
 
     </div>
+
 </header>
 
+
 <main>
+
+
+    <!-- HERO -->
 
     <section class="hero">
 
         <div class="hero-inner">
 
             <div class="hero-label">
-                Discovery & Perspective
+                Travel
             </div>
 
-            <h1>Travel</h1>
+            <h1>Understanding the World</h1>
 
             <p>
-                Exploring places, cultures, ideas,
-                and experiences that broaden perspective
-                and deepen our understanding of the world.
+                Travel allows me to experience the world beyond
+                what I can learn from a page or a screen.
+                It is an opportunity to discover different cultures,
+                perspectives, and ways of living.
             </p>
 
         </div>
 
     </section>
 
+
+    <!-- WHY I TRAVEL -->
 
     <section class="intro">
 
@@ -394,26 +443,44 @@
             <div class="section-header">
 
                 <div class="section-label">
-                    Perspective
+                    My Perspective
                 </div>
 
-                <h2>Seeing the World Differently</h2>
+                <h2>Why I Travel</h2>
 
             </div>
+
 
             <div class="intro-content">
 
                 <p>
-                    Travel offers more than a change of scenery.
-                    It creates opportunities to experience
-                    different cultures, traditions, ideas,
-                    and ways of life.
+                    I believe travel is a way to understand the world
+                    and also to understand yourself.
                 </p>
 
                 <p>
-                    Each new environment can encourage curiosity,
-                    reflection, and a greater appreciation
-                    for the diversity of the world around us.
+                    Books can tell us what a place is like,
+                    but actually standing there, walking through its
+                    neighborhoods, observing everyday life, and
+                    experiencing the way local people live creates
+                    an entirely different understanding.
+                </p>
+
+                <div class="quote">
+
+                    <p>
+                        “The more I travel, the more I realize how vast
+                        the world is.”
+                    </p>
+
+                </div>
+
+                <p>
+                    Every place has its own history, traditions,
+                    rhythms, challenges, and values. Experiencing
+                    those differences reminds me that there is rarely
+                    only one way to see the world or one way to live
+                    a meaningful life.
                 </p>
 
             </div>
@@ -422,6 +489,8 @@
 
     </section>
 
+
+    <!-- TRAVEL PERSPECTIVES -->
 
     <section class="perspectives">
 
@@ -430,68 +499,131 @@
             <div class="section-header">
 
                 <div class="section-label">
-                    What Travel Offers
+                    Discovery
                 </div>
 
-                <h2>New Perspectives</h2>
-
-                <p>
-                    Travel can shape the way we think,
-                    learn, connect, and understand the world.
-                </p>
+                <h2>What Travel Teaches Me</h2>
 
             </div>
 
+
             <div class="cards">
 
+
                 <div class="card">
+
+                    <div class="card-number">
+                        01
+                    </div>
 
                     <h3>Culture</h3>
 
                     <p>
-                        Learning from different traditions,
-                        customs, histories, and ways
-                        of seeing everyday life.
+                        Culture shapes how people communicate,
+                        celebrate, work, eat, build communities,
+                        and understand their place in the world.
+                        Experiencing those differences in person
+                        creates a deeper appreciation than observation
+                        from a distance ever could.
                     </p>
 
                 </div>
 
-                <div class="card">
-
-                    <h3>Discovery</h3>
-
-                    <p>
-                        Experiencing new places and environments
-                        that encourage curiosity and a willingness
-                        to explore beyond what is familiar.
-                    </p>
-
-                </div>
 
                 <div class="card">
 
-                    <h3>Connection</h3>
-
-                    <p>
-                        Recognizing the shared experiences
-                        that connect people while appreciating
-                        the differences that make cultures unique.
-                    </p>
-
-                </div>
-
-                <div class="card">
+                    <div class="card-number">
+                        02
+                    </div>
 
                     <h3>Perspective</h3>
 
                     <p>
-                        Returning from new experiences
-                        with a broader view of life,
-                        opportunity, and the world around us.
+                        Travel reminds me that my own experience
+                        represents only one small part of a much larger
+                        world. Seeing how other people live challenges
+                        assumptions and helps me look at familiar ideas
+                        from a different perspective.
                     </p>
 
                 </div>
 
+
+                <div class="card">
+
+                    <div class="card-number">
+                        03
+                    </div>
+
+                    <h3>Connection</h3>
+
+                    <p>
+                        Even across different languages and traditions,
+                        many of the things people value are remarkably
+                        similar: family, security, dignity, opportunity,
+                        belonging, and hope for a better future.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        04
+                    </div>
+
+                    <h3>Respect</h3>
+
+                    <p>
+                        The more places I experience, the more important
+                        I believe it is to respect ways of living that
+                        may be different from my own. Difference does
+                        not have to create distance; it can create
+                        curiosity and understanding.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        05
+                    </div>
+
+                    <h3>Curiosity</h3>
+
+                    <p>
+                        Travel encourages me to keep asking questions.
+                        Why did a city develop this way? What shaped
+                        its culture? How do people here think about
+                        work, family, community, or the future?
+                        Curiosity makes every journey more meaningful.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        06
+                    </div>
+
+                    <h3>Self-Understanding</h3>
+
+                    <p>
+                        Being away from familiar routines can also
+                        reveal something about ourselves. New
+                        environments make us more aware of what we
+                        value, what we take for granted, and what kind
+                        of life genuinely feels meaningful.
+                    </p>
+
+                </div>
+
+
             </div>
 
         </div>
@@ -499,24 +631,37 @@
     </section>
 
 
-    <section class="meaning">
+    <!-- WORLD -->
+
+    <section class="world">
 
         <div class="container">
 
-            <div class="meaning-content">
+            <div class="world-content">
 
-                <h2>More Than a Destination</h2>
+                <div class="section-label">
+                    A Wider World
+                </div>
+
+                <h2>Beyond the Familiar</h2>
 
                 <p>
-                    Meaningful travel is often less about
-                    how many places we visit and more about
-                    what we learn from the experience.
+                    One of the things I value most about travel is
+                    the opportunity to move beyond what is familiar.
                 </p>
 
                 <p>
-                    New environments can challenge assumptions,
-                    encourage openness, and help us see familiar
-                    ideas through a different lens.
+                    It is easy to believe that our own routines,
+                    expectations, and traditions are simply the normal
+                    way of doing things. Travel quietly challenges
+                    that assumption.
+                </p>
+
+                <p>
+                    The world becomes more interesting when we stop
+                    asking whether another way of life is better
+                    or worse and begin asking what we can learn
+                    from it.
                 </p>
 
             </div>
@@ -526,34 +671,42 @@
     </section>
 
 
-    <section class="growth">
+    <!-- REFLECTION -->
+
+    <section class="reflection">
 
         <div class="container">
 
             <div class="section-header">
 
                 <div class="section-label">
-                    Personal Growth
+                    Reflection
                 </div>
 
-                <h2>Learning Through Experience</h2>
+                <h2>Travel as Personal Growth</h2>
 
             </div>
 
-            <div class="growth-content">
+
+            <div class="reflection-content">
 
                 <p>
-                    Travel can be a form of education.
-                    It can encourage adaptability,
-                    independence, curiosity, and a deeper
-                    understanding of people and places.
+                    For me, the most meaningful journeys are not simply
+                    about collecting destinations. They are about
+                    returning home with a slightly different way
+                    of seeing the world.
                 </p>
 
                 <p>
-                    I value experiences that create
-                    lasting memories while also offering
-                    new perspectives that continue
-                    long after the journey ends.
+                    A conversation, a meal, a neighborhood, a landscape,
+                    or an unfamiliar tradition can sometimes change
+                    our perspective in ways we did not expect.
+                </p>
+
+                <p>
+                    The more of the world I experience, the more
+                    I appreciate its complexity — and the more I value
+                    curiosity, humility, openness, and respect.
                 </p>
 
             </div>
@@ -562,6 +715,8 @@
 
     </section>
 
+
+    <!-- PAGE NAVIGATION -->
 
     <section class="page-navigation">
 
@@ -581,6 +736,10 @@
                     Investment
                 </a>
 
+                <a class="button" href="personal-growth.html">
+                    Personal Growth
+                </a>
+
                 <a class="button" href="philanthropy.html">
                     Philanthropy
                 </a>
@@ -591,11 +750,14 @@
 
     </section>
 
+
 </main>
+
 
 <footer>
     © 2026 Anna Cheung. All rights reserved.
 </footer>
+
 
 </body>
 </html>
