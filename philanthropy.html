@@ -7,7 +7,7 @@
     <title>Philanthropy | Anna Cheung</title>
 
     <meta name="description"
-          content="Explore Anna Cheung's perspective on philanthropy, thoughtful giving, opportunity, community, and creating meaningful long-term impact.">
+          content="Anna Cheung's personal perspective on philanthropy, responsibility, opportunity, education, health, community, and creating meaningful long-term impact.">
 
     <meta name="author" content="Anna Cheung">
     <meta name="robots" content="index, follow">
@@ -15,12 +15,11 @@
     <link rel="canonical"
           href="https://annacheung1976.github.io/philanthropy.html">
 
-    <!-- Open Graph -->
     <meta property="og:title"
           content="Philanthropy | Anna Cheung">
 
     <meta property="og:description"
-          content="Anna Cheung's perspective on thoughtful giving and creating meaningful long-term impact.">
+          content="Anna Cheung's personal perspective on philanthropy, responsibility, opportunity, thoughtful giving, and meaningful long-term impact.">
 
     <meta property="og:type" content="website">
 
@@ -30,7 +29,6 @@
     <meta property="og:site_name"
           content="Anna Cheung">
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -38,7 +36,7 @@
       "@id": "https://annacheung1976.github.io/philanthropy.html#webpage",
       "url": "https://annacheung1976.github.io/philanthropy.html",
       "name": "Philanthropy | Anna Cheung",
-      "description": "Anna Cheung's perspective on philanthropy, thoughtful giving, opportunity, community, and meaningful long-term impact.",
+      "description": "Anna Cheung's personal perspective on philanthropy, responsibility, opportunity, thoughtful giving, and meaningful long-term impact.",
       "about": {
         "@id": "https://annacheung1976.github.io/#person"
       }
@@ -64,8 +62,6 @@
             line-height: 1.8;
         }
 
-        /* HEADER */
-
         header {
             background: #242321;
             color: #ffffff;
@@ -76,7 +72,7 @@
         }
 
         .nav-container {
-            max-width: 1180px;
+            max-width: 1250px;
             margin: auto;
             padding: 18px 30px;
             display: flex;
@@ -93,7 +89,8 @@
 
         nav {
             display: flex;
-            gap: 26px;
+            align-items: center;
+            gap: 24px;
         }
 
         nav a {
@@ -101,15 +98,14 @@
             text-decoration: none;
             font-family: Arial, sans-serif;
             font-size: 13px;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.4px;
             transition: opacity 0.2s ease;
+            white-space: nowrap;
         }
 
         nav a:hover {
             opacity: 0.65;
         }
-
-        /* HERO */
 
         .hero {
             min-height: 500px;
@@ -118,11 +114,11 @@
             justify-content: center;
             text-align: center;
             padding: 90px 25px;
-            background: #eee9e1;
+            background: #f3efe9;
         }
 
         .hero-inner {
-            max-width: 820px;
+            max-width: 850px;
         }
 
         .hero-label {
@@ -143,13 +139,11 @@
         }
 
         .hero p {
-            max-width: 670px;
+            max-width: 720px;
             margin: auto;
-            color: #6d665d;
-            font-size: 18px;
+            color: #655f57;
+            font-size: 19px;
         }
-
-        /* GENERAL */
 
         section {
             padding: 90px 25px;
@@ -162,7 +156,7 @@
 
         .section-header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 48px;
         }
 
         .section-label {
@@ -181,22 +175,13 @@
             margin-bottom: 14px;
         }
 
-        .section-header p {
-            max-width: 680px;
-            margin: auto;
-            color: #777067;
-        }
-
-        /* INTRODUCTION */
-
-        .introduction {
+        .intro {
             background: #ffffff;
         }
 
         .intro-content {
-            max-width: 780px;
+            max-width: 800px;
             margin: auto;
-            text-align: center;
         }
 
         .intro-content p {
@@ -205,9 +190,22 @@
             margin-bottom: 22px;
         }
 
-        /* AREAS */
+        .quote {
+            margin: 40px 0;
+            padding: 30px 35px;
+            border-left: 2px solid #9c8f7e;
+            background: #f7f4ef;
+        }
 
-        .areas {
+        .quote p {
+            font-size: 24px;
+            line-height: 1.6;
+            color: #403c37;
+            margin: 0;
+            font-style: italic;
+        }
+
+        .focus {
             background: #f5f2ec;
         }
 
@@ -221,19 +219,20 @@
             background: #ffffff;
             border: 1px solid #e4ddd2;
             padding: 38px;
-            transition: transform 0.2s ease,
-                        box-shadow 0.2s ease;
         }
 
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+        .card-number {
+            font-family: Arial, sans-serif;
+            color: #a09484;
+            font-size: 11px;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
         }
 
         .card h3 {
             font-size: 23px;
             font-weight: normal;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
 
         .card p {
@@ -241,41 +240,40 @@
             font-size: 15px;
         }
 
-        /* PHILOSOPHY */
-
-        .philosophy {
+        .responsibility {
             background: #292825;
             color: #ffffff;
         }
 
-        .philosophy-content {
-            max-width: 780px;
+        .responsibility-content {
+            max-width: 800px;
             margin: auto;
             text-align: center;
         }
 
-        .philosophy h2 {
+        .responsibility .section-label {
+            color: #b5aa9b;
+        }
+
+        .responsibility h2 {
             font-size: 40px;
             font-weight: normal;
             margin-bottom: 28px;
         }
 
-        .philosophy p {
+        .responsibility p {
             color: #c3bcb2;
             font-size: 18px;
             margin-bottom: 22px;
         }
-
-        /* IMPACT */
 
         .impact {
             background: #eee9e1;
         }
 
         .impact-content {
-            max-width: 780px;
+            max-width: 800px;
             margin: auto;
-            text-align: center;
         }
 
         .impact-content p {
@@ -283,8 +281,6 @@
             font-size: 18px;
             margin-bottom: 22px;
         }
-
-        /* NAVIGATION */
 
         .page-navigation {
             background: #ffffff;
@@ -315,8 +311,6 @@
             color: #ffffff;
         }
 
-        /* FOOTER */
-
         footer {
             background: #242321;
             color: #aaa39a;
@@ -326,9 +320,7 @@
             font-size: 12px;
         }
 
-        /* MOBILE */
-
-        @media (max-width: 850px) {
+        @media (max-width: 950px) {
 
             .nav-container {
                 flex-direction: column;
@@ -341,12 +333,8 @@
                 gap: 12px 18px;
             }
 
-            .hero {
-                min-height: 430px;
-            }
-
             .hero h1 {
-                font-size: 44px;
+                font-size: 46px;
             }
 
             .cards {
@@ -358,8 +346,35 @@
             }
 
             .section-header h2,
-            .philosophy h2 {
+            .responsibility h2 {
                 font-size: 34px;
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            .nav-container {
+                padding: 16px 18px;
+            }
+
+            nav {
+                gap: 9px 14px;
+            }
+
+            nav a {
+                font-size: 11px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .card {
+                padding: 28px;
+            }
+
+            .quote p {
+                font-size: 21px;
             }
         }
 
@@ -367,6 +382,7 @@
 </head>
 
 <body>
+
 
 <header>
 
@@ -376,15 +392,15 @@
             <a href="index.html">Anna Cheung</a>
         </div>
 
- <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="investment.html">Investment</a>
-    <a href="travel.html">Travel</a>
-    <a href="personal-growth.html">Personal Growth</a>
-    <a href="philanthropy.html">Philanthropy</a>
-    <a href="index.html#contact">Contact</a>
-</nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="investment.html">Investment</a>
+            <a href="travel.html">Travel</a>
+            <a href="personal-growth.html">Personal Growth</a>
+            <a href="philanthropy.html">Philanthropy</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
 
     </div>
 
@@ -393,6 +409,7 @@
 
 <main>
 
+
     <!-- HERO -->
 
     <section class="hero">
@@ -400,15 +417,16 @@
         <div class="hero-inner">
 
             <div class="hero-label">
-                Giving With Purpose
+                Philanthropy
             </div>
 
-            <h1>Philanthropy</h1>
+            <h1>Giving With Purpose</h1>
 
             <p>
-                A thoughtful approach to giving,
-                opportunity, responsibility, and creating
-                meaningful impact that can endure over time.
+                I believe philanthropy is not simply about giving.
+                It is about responsibility, opportunity,
+                and helping create possibilities for people
+                who may not have had the same advantages.
             </p>
 
         </div>
@@ -416,36 +434,52 @@
     </section>
 
 
-    <!-- INTRODUCTION -->
+    <!-- WHY PHILANTHROPY MATTERS -->
 
-    <section class="introduction">
+    <section class="intro">
 
         <div class="container">
 
             <div class="section-header">
 
                 <div class="section-label">
-                    Perspective
+                    My Perspective
                 </div>
 
-                <h2>Giving With Purpose</h2>
+                <h2>Why Philanthropy Matters to Me</h2>
 
             </div>
+
 
             <div class="intro-content">
 
                 <p>
-                    I believe philanthropy begins with understanding.
-                    Meaningful giving is not only about providing
-                    resources, but also about considering where
-                    support can create genuine and lasting value.
+                    For me, philanthropy is not simply about giving
+                    money. I see it as a responsibility.
                 </p>
 
                 <p>
-                    Thoughtful philanthropy can help expand
-                    opportunity, strengthen communities,
-                    encourage learning, and support people
-                    as they work toward a better future.
+                    Once we are fortunate enough to take care of our
+                    own lives, I believe it is meaningful to also think
+                    about people who may not have been given the same
+                    opportunities.
+                </p>
+
+                <div class="quote">
+
+                    <p>
+                        “Wealth can bring freedom, but it becomes even
+                        more meaningful when it can help create
+                        opportunity for someone else.”
+                    </p>
+
+                </div>
+
+                <p>
+                    Sometimes the difference between possibility
+                    and limitation can come down to access — access
+                    to education, healthcare, support, information,
+                    or simply another chance.
                 </p>
 
             </div>
@@ -455,67 +489,113 @@
     </section>
 
 
-    <!-- AREAS OF INTEREST -->
+    <!-- AREAS THAT MATTER -->
 
-    <section class="areas">
+    <section class="focus">
 
         <div class="container">
 
             <div class="section-header">
 
                 <div class="section-label">
-                    Areas of Interest
+                    Areas That Matter
                 </div>
 
-                <h2>Meaningful Impact</h2>
-
-                <p>
-                    Areas that reflect a broader interest
-                    in opportunity, learning, community,
-                    and long-term positive change.
-                </p>
+                <h2>Creating Opportunity</h2>
 
             </div>
 
+
             <div class="cards">
+
 
                 <div class="card">
 
-                    <h3>Education & Learning</h3>
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <h3>Education</h3>
 
                     <p>
-                        Supporting access to knowledge,
-                        learning opportunities, and the
-                        development of skills that can
-                        create possibilities for the future.
+                        Education can expand what a person believes
+                        is possible for their future. Knowledge,
+                        mentorship, and access to learning can create
+                        opportunities that continue far beyond
+                        a single moment of support.
                     </p>
 
                 </div>
 
 
                 <div class="card">
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+                    <h3>Health</h3>
+
+                    <p>
+                        Good health affects nearly every part of life.
+                        Access to care, support, and essential resources
+                        can give people a stronger foundation from
+                        which to build their future.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        03
+                    </div>
 
                     <h3>Opportunity</h3>
 
                     <p>
-                        Exploring ways to help people gain
-                        access to resources, experiences,
-                        and opportunities that encourage
-                        independence and personal growth.
+                        Talent and potential exist everywhere,
+                        but opportunity does not. I believe meaningful
+                        support can help people gain access to choices
+                        they may not otherwise have had.
                     </p>
 
                 </div>
 
 
                 <div class="card">
+
+                    <div class="card-number">
+                        04
+                    </div>
+
+                    <h3>New Beginnings</h3>
+
+                    <p>
+                        Everyone can face moments when life changes
+                        unexpectedly. Sometimes what matters most
+                        is having the support, resources, or chance
+                        to begin again.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        05
+                    </div>
 
                     <h3>Community</h3>
 
                     <p>
-                        Recognizing the importance of
-                        strong communities and thoughtful
-                        initiatives that help people
-                        support and learn from one another.
+                        Strong communities are built when people
+                        are willing to care about more than their own
+                        individual lives. I believe shared responsibility
+                        can create greater stability, dignity,
+                        and connection.
                     </p>
 
                 </div>
@@ -523,15 +603,21 @@
 
                 <div class="card">
 
+                    <div class="card-number">
+                        06
+                    </div>
+
                     <h3>Long-Term Impact</h3>
 
                     <p>
-                        Focusing on approaches that aim
-                        to create sustainable value rather
-                        than only addressing short-term needs.
+                        The most meaningful support is not always
+                        the most immediate. I am drawn to thinking
+                        about how resources can create lasting
+                        opportunity rather than only temporary relief.
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -540,29 +626,36 @@
     </section>
 
 
-    <!-- PHILOSOPHY -->
+    <!-- RESPONSIBILITY -->
 
-    <section class="philosophy">
+    <section class="responsibility">
 
         <div class="container">
 
-            <div class="philosophy-content">
+            <div class="responsibility-content">
 
-                <h2>A Long-Term Perspective</h2>
+                <div class="section-label">
+                    Responsibility
+                </div>
+
+                <h2>More Than Generosity</h2>
 
                 <p>
-                    The most meaningful forms of giving
-                    often extend beyond a single moment.
-                    They can create opportunities that
-                    continue to influence lives and
-                    communities over time.
+                    I believe generosity matters, but responsibility
+                    goes further.
                 </p>
 
                 <p>
-                    I value approaches that combine
-                    compassion with thoughtful decision-making,
-                    responsibility, and an understanding
-                    of long-term outcomes.
+                    Responsibility means thinking carefully about
+                    what people truly need, respecting their dignity,
+                    and recognizing that helping someone should not
+                    be about making ourselves feel important.
+                </p>
+
+                <p>
+                    At its best, philanthropy can help people gain
+                    greater independence, opportunity, and the ability
+                    to make meaningful choices for their own lives.
                 </p>
 
             </div>
@@ -581,26 +674,34 @@
             <div class="section-header">
 
                 <div class="section-label">
-                    Looking Forward
+                    Long-Term Perspective
                 </div>
 
                 <h2>Creating Lasting Value</h2>
 
             </div>
 
+
             <div class="impact-content">
 
                 <p>
-                    Philanthropy is an evolving journey.
-                    As circumstances and communities change,
-                    so do the opportunities to learn,
-                    contribute, and make a meaningful difference.
+                    I tend to think about philanthropy in the same
+                    long-term way that I think about many other areas
+                    of life: what can create lasting value?
                 </p>
 
                 <p>
-                    My interest remains centered on thoughtful
-                    giving and the possibility of creating
-                    positive impact that extends beyond today.
+                    A single act of support can matter greatly,
+                    but lasting impact often comes from helping create
+                    stronger foundations — education, health,
+                    opportunity, confidence, and the ability
+                    to move forward independently.
+                </p>
+
+                <p>
+                    To me, success is more meaningful when it gives us
+                    not only greater freedom in our own lives,
+                    but also greater capacity to care for others.
                 </p>
 
             </div>
@@ -626,11 +727,24 @@
                     About Anna
                 </a>
 
+                <a class="button" href="investment.html">
+                    Investment
+                </a>
+
+                <a class="button" href="travel.html">
+                    Travel
+                </a>
+
+                <a class="button" href="personal-growth.html">
+                    Personal Growth
+                </a>
+
             </div>
 
         </div>
 
     </section>
+
 
 </main>
 
@@ -638,6 +752,7 @@
 <footer>
     © 2026 Anna Cheung. All rights reserved.
 </footer>
+
 
 </body>
 </html>
