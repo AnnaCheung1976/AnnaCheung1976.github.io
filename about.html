@@ -107,7 +107,7 @@
         }
 
         .hero {
-            min-height: 470px;
+            min-height: 430px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -149,7 +149,7 @@
         }
 
         .container {
-            max-width: 1050px;
+            max-width: 1100px;
             margin: auto;
         }
 
@@ -174,23 +174,56 @@
             margin-bottom: 14px;
         }
 
+        /* PHOTO + STORY */
+
         .story {
             background: #ffffff;
         }
 
-        .story-content {
-            max-width: 780px;
-            margin: auto;
+        .story-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 65px;
+            align-items: center;
+        }
+
+        .story-photo {
+            width: 100%;
+        }
+
+        .story-photo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 680px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .photo-caption {
+            margin-top: 10px;
+            color: #948a7e;
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            letter-spacing: 0.4px;
+            text-align: center;
+        }
+
+        .story-content h2 {
+            font-size: 40px;
+            font-weight: normal;
+            color: #292723;
+            margin-bottom: 25px;
         }
 
         .story-content p {
             color: #615b53;
-            font-size: 18px;
+            font-size: 17px;
             margin-bottom: 22px;
         }
 
         .background-note {
-            margin-top: 35px;
+            margin-top: 30px;
             padding: 25px 28px;
             border-left: 2px solid #a99d8d;
             background: #f7f4ef;
@@ -200,6 +233,8 @@
             margin: 0;
             font-size: 16px;
         }
+
+        /* PERSPECTIVES */
 
         .perspectives {
             background: #f5f2ec;
@@ -240,6 +275,8 @@
             letter-spacing: 1px;
             text-transform: uppercase;
         }
+
+        /* VALUES */
 
         .values {
             background: #292825;
@@ -286,6 +323,8 @@
             color: #ddd7ce;
         }
 
+        /* LOOKING FORWARD */
+
         .looking-forward {
             background: #eee9e1;
         }
@@ -301,6 +340,8 @@
             font-size: 18px;
             margin-bottom: 22px;
         }
+
+        /* NAVIGATION */
 
         .page-navigation {
             background: #ffffff;
@@ -357,6 +398,21 @@
                 font-size: 46px;
             }
 
+            .story-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .story-photo {
+                max-width: 600px;
+                margin: auto;
+            }
+
+            .story-content {
+                max-width: 760px;
+                margin: auto;
+            }
+
             .cards {
                 grid-template-columns: 1fr;
             }
@@ -366,7 +422,8 @@
             }
 
             .section-header h2,
-            .values h2 {
+            .values h2,
+            .story-content h2 {
                 font-size: 34px;
             }
         }
@@ -392,12 +449,17 @@
             .card {
                 padding: 28px;
             }
+
+            .story-photo img {
+                max-height: none;
+            }
         }
 
     </style>
 </head>
 
 <body>
+
 
 <header>
 
@@ -448,49 +510,65 @@
     </section>
 
 
-    <!-- MY STORY -->
+    <!-- PHOTO + MY STORY -->
 
     <section class="story">
 
         <div class="container">
 
-            <div class="section-header">
+            <div class="story-grid">
 
-                <div class="section-label">
-                    My Story
+
+                <div class="story-photo">
+
+                    <img
+                        src="anna-cheung-capital-group.png"
+                        alt="Anna Cheung at Capital Group"
+                        loading="eager">
+
+                    <div class="photo-caption">
+                        Anna Cheung
+                    </div>
+
                 </div>
 
-                <h2>A Personal Perspective</h2>
 
-            </div>
+                <div class="story-content">
 
-            <div class="story-content">
+                    <div class="section-label">
+                        My Story
+                    </div>
 
-                <p>
-                    I grew up in Hong Kong and later moved to
-                    the United States. Today, I live in the
-                    Greater Los Angeles area, carrying with me
-                    the perspectives shaped by different cultures,
-                    communities, and experiences.
-                </p>
-
-                <p>
-                    I have always been curious about how people
-                    make decisions, how the world changes,
-                    and how the choices we make today can shape
-                    the opportunities we have tomorrow.
-                </p>
-
-                <div class="background-note">
+                    <h2>A Personal Perspective</h2>
 
                     <p>
-                        I currently serve as a Philanthropic Grants
-                        Program Officer at Capital Group, where my
-                        professional work reflects my broader interest
-                        in thoughtful giving and meaningful impact.
+                        I grew up in Hong Kong and later moved to
+                        the United States. Today, I live in the
+                        Greater Los Angeles area, carrying with me
+                        the perspectives shaped by different cultures,
+                        communities, and experiences.
                     </p>
 
+                    <p>
+                        I have always been curious about how people
+                        make decisions, how the world changes,
+                        and how the choices we make today can shape
+                        the opportunities we have tomorrow.
+                    </p>
+
+                    <div class="background-note">
+
+                        <p>
+                            I currently serve as a Philanthropic Grants
+                            Program Officer at Capital Group, where my
+                            professional work reflects my broader interest
+                            in thoughtful giving and meaningful impact.
+                        </p>
+
+                    </div>
+
                 </div>
+
 
             </div>
 
@@ -627,11 +705,8 @@
                 <div class="values-list">
 
                     <div class="value">Kindness</div>
-
                     <div class="value">Integrity</div>
-
                     <div class="value">Responsibility</div>
-
                     <div class="value">Freedom</div>
 
                 </div>
@@ -702,7 +777,7 @@
     </section>
 
 
-    <!-- NAVIGATION -->
+    <!-- PAGE NAVIGATION -->
 
     <section class="page-navigation">
 
