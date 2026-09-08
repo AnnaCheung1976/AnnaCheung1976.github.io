@@ -32,14 +32,20 @@
     <meta property="og:site_name"
           content="Anna Cheung">
 
+    <meta property="og:image"
+          content="https://annacheung1976.github.io/anna-cheung-home.png">
+
     <meta name="twitter:card"
-          content="summary">
+          content="summary_large_image">
 
     <meta name="twitter:title"
           content="Anna Cheung | Personal Website">
 
     <meta name="twitter:description"
           content="Perspectives on investment, travel, philanthropy, personal growth, and meaningful impact.">
+
+    <meta name="twitter:image"
+          content="https://annacheung1976.github.io/anna-cheung-home.png">
 
     <script type="application/ld+json">
     {
@@ -48,6 +54,7 @@
       "@id": "https://annacheung1976.github.io/#person",
       "name": "Anna Cheung",
       "url": "https://annacheung1976.github.io/",
+      "image": "https://annacheung1976.github.io/anna-cheung-home.png",
       "description": "Anna Cheung's personal website featuring perspectives on growth, investment, travel, philanthropy, and meaningful impact."
     }
     </script>
@@ -116,18 +123,24 @@
             opacity: 0.65;
         }
 
+        /* HERO */
+
         .hero {
-            min-height: 590px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 100px 25px;
             background: #f3efe9;
+            padding: 70px 25px;
         }
 
-        .hero-inner {
-            max-width: 900px;
+        .hero-container {
+            max-width: 1180px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 0.95fr 1.05fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .hero-copy {
+            padding: 20px 0;
         }
 
         .hero-label {
@@ -136,22 +149,52 @@
             letter-spacing: 4px;
             font-size: 11px;
             color: #8b8173;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: 68px;
+            font-size: 72px;
             font-weight: normal;
-            line-height: 1.1;
-            margin-bottom: 24px;
+            line-height: 1.05;
+            margin-bottom: 26px;
             color: #292723;
         }
 
         .hero p {
-            max-width: 760px;
-            margin: auto;
+            max-width: 560px;
             color: #655f57;
             font-size: 19px;
+            margin-bottom: 32px;
+        }
+
+        .hero-button {
+            display: inline-block;
+            padding: 14px 28px;
+            border: 1px solid #292825;
+            color: #292825;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+        }
+
+        .hero-button:hover {
+            background: #292825;
+            color: #ffffff;
+        }
+
+        .hero-photo {
+            width: 100%;
+        }
+
+        .hero-photo img {
+            display: block;
+            width: 100%;
+            height: 650px;
+            object-fit: cover;
+            object-position: center 35%;
         }
 
         section {
@@ -183,6 +226,8 @@
             color: #292723;
             margin-bottom: 14px;
         }
+
+        /* ABOUT */
 
         .about {
             background: #ffffff;
@@ -218,6 +263,8 @@
             color: #ffffff;
         }
 
+        /* JOURNEY */
+
         .journey {
             background: #eee9e1;
         }
@@ -232,6 +279,8 @@
             font-size: 18px;
             margin-bottom: 22px;
         }
+
+        /* INTERESTS */
 
         .interests {
             background: #f5f2ec;
@@ -273,6 +322,8 @@
             text-transform: uppercase;
         }
 
+        /* FOCUS */
+
         .focus {
             background: #292825;
             color: #ffffff;
@@ -308,6 +359,8 @@
             font-size: 15px;
         }
 
+        /* PHILANTHROPY */
+
         .philanthropy {
             background: #ffffff;
         }
@@ -323,6 +376,8 @@
             font-size: 18px;
             margin-bottom: 25px;
         }
+
+        /* CONTACT */
 
         .contact {
             background: #eee9e1;
@@ -370,8 +425,39 @@
                 gap: 12px 18px;
             }
 
+            .hero {
+                padding: 55px 22px 70px;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-copy {
+                text-align: center;
+                max-width: 760px;
+                margin: auto;
+            }
+
+            .hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
             .hero h1 {
-                font-size: 52px;
+                font-size: 56px;
+            }
+
+            .hero-photo {
+                max-width: 650px;
+                margin: auto;
+            }
+
+            .hero-photo img {
+                height: auto;
+                max-height: 780px;
+                object-fit: contain;
             }
 
             .cards,
@@ -402,12 +488,12 @@
                 font-size: 11px;
             }
 
-            .hero {
-                min-height: 500px;
-            }
-
             .hero h1 {
                 font-size: 44px;
+            }
+
+            .hero p {
+                font-size: 17px;
             }
 
             .card,
@@ -453,19 +539,37 @@
 
     <section class="hero">
 
-        <div class="hero-inner">
+        <div class="hero-container">
 
-            <div class="hero-label">
-                Personal Website
+            <div class="hero-copy">
+
+                <div class="hero-label">
+                    Personal Website
+                </div>
+
+                <h1>Anna Cheung</h1>
+
+                <p>
+                    Exploring growth, investment, travel,
+                    philanthropy, and the ideas that shape
+                    a meaningful life.
+                </p>
+
+                <a class="hero-button" href="about.html">
+                    Discover My Story
+                </a>
+
             </div>
 
-            <h1>Anna Cheung</h1>
 
-            <p>
-                Exploring growth, investment, travel,
-                philanthropy, and the ideas that shape
-                a meaningful life.
-            </p>
+            <div class="hero-photo">
+
+                <img
+                    src="anna-cheung-home.png"
+                    alt="Anna Cheung"
+                    loading="eager">
+
+            </div>
 
         </div>
 
