@@ -29,6 +29,9 @@
     <meta property="og:site_name"
           content="Anna Cheung">
 
+    <meta property="og:image"
+          content="https://annacheung1976.github.io/anna-cheung-egypt-pyramids.png">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -107,18 +110,24 @@
             opacity: 0.65;
         }
 
+        /* HERO */
+
         .hero {
-            min-height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 90px 25px;
             background: #f3efe9;
+            padding: 75px 25px;
         }
 
-        .hero-inner {
-            max-width: 850px;
+        .hero-container {
+            max-width: 1180px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .hero-copy {
+            padding: 20px 0;
         }
 
         .hero-label {
@@ -133,16 +142,41 @@
         .hero h1 {
             font-size: 58px;
             font-weight: normal;
-            line-height: 1.15;
-            margin-bottom: 22px;
+            line-height: 1.1;
+            margin-bottom: 24px;
             color: #292723;
         }
 
         .hero p {
-            max-width: 720px;
-            margin: auto;
             color: #655f57;
             font-size: 19px;
+            margin-bottom: 22px;
+        }
+
+        .hero-quote {
+            margin-top: 30px;
+            padding-left: 24px;
+            border-left: 2px solid #a09383;
+            color: #4d4842;
+            font-size: 21px;
+            font-style: italic;
+        }
+
+        .hero-photo img {
+            display: block;
+            width: 100%;
+            height: 690px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .photo-caption {
+            text-align: center;
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            color: #958b7e;
+            letter-spacing: 0.4px;
         }
 
         section {
@@ -175,6 +209,8 @@
             margin-bottom: 14px;
         }
 
+        /* INTRO */
+
         .intro {
             background: #ffffff;
         }
@@ -190,20 +226,7 @@
             margin-bottom: 22px;
         }
 
-        .quote {
-            margin: 40px 0;
-            padding: 30px 35px;
-            border-left: 2px solid #9c8f7e;
-            background: #f7f4ef;
-        }
-
-        .quote p {
-            font-size: 24px;
-            line-height: 1.6;
-            color: #403c37;
-            margin: 0;
-            font-style: italic;
-        }
+        /* CARDS */
 
         .perspectives {
             background: #f5f2ec;
@@ -240,6 +263,8 @@
             font-size: 15px;
         }
 
+        /* WORLD */
+
         .world {
             background: #292825;
             color: #ffffff;
@@ -267,6 +292,8 @@
             margin-bottom: 22px;
         }
 
+        /* REFLECTION */
+
         .reflection {
             background: #eee9e1;
         }
@@ -281,6 +308,8 @@
             font-size: 18px;
             margin-bottom: 22px;
         }
+
+        /* NAVIGATION */
 
         .page-navigation {
             background: #ffffff;
@@ -333,8 +362,35 @@
                 gap: 12px 18px;
             }
 
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-copy {
+                text-align: center;
+                max-width: 760px;
+                margin: auto;
+            }
+
+            .hero-quote {
+                max-width: 620px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+            }
+
             .hero h1 {
-                font-size: 46px;
+                font-size: 48px;
+            }
+
+            .hero-photo {
+                max-width: 650px;
+                margin: auto;
+            }
+
+            .hero-photo img {
+                height: auto;
             }
 
             .cards {
@@ -365,16 +421,24 @@
                 font-size: 11px;
             }
 
+            .hero {
+                padding: 55px 18px;
+            }
+
             .hero h1 {
                 font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 17px;
             }
 
             .card {
                 padding: 28px;
             }
 
-            .quote p {
-                font-size: 21px;
+            .hero-quote {
+                font-size: 19px;
             }
         }
 
@@ -414,27 +478,58 @@
 
     <section class="hero">
 
-        <div class="hero-inner">
+        <div class="hero-container">
 
-            <div class="hero-label">
-                Travel
+
+            <div class="hero-copy">
+
+                <div class="hero-label">
+                    Travel
+                </div>
+
+                <h1>Understanding the World</h1>
+
+                <p>
+                    I believe travel is a way to understand the world
+                    and also to understand ourselves.
+                </p>
+
+                <p>
+                    Books can tell us what a place is like,
+                    but actually standing there, walking through its
+                    neighborhoods, observing everyday life, and
+                    experiencing another culture creates an entirely
+                    different understanding.
+                </p>
+
+                <div class="hero-quote">
+                    “The more I travel, the more I realize
+                    how vast the world is.”
+                </div>
+
             </div>
 
-            <h1>Understanding the World</h1>
 
-            <p>
-                Travel allows me to experience the world beyond
-                what I can learn from a page or a screen.
-                It is an opportunity to discover different cultures,
-                perspectives, and ways of living.
-            </p>
+            <div class="hero-photo">
+
+                <img
+                    src="anna-cheung-egypt-pyramids.png"
+                    alt="Anna Cheung visiting the pyramids and the Great Sphinx in Giza, Egypt"
+                    loading="eager">
+
+                <div class="photo-caption">
+                    Giza, Egypt
+                </div>
+
+            </div>
+
 
         </div>
 
     </section>
 
 
-    <!-- WHY I TRAVEL -->
+    <!-- INTRO -->
 
     <section class="intro">
 
@@ -454,33 +549,20 @@
             <div class="intro-content">
 
                 <p>
-                    I believe travel is a way to understand the world
-                    and also to understand yourself.
-                </p>
-
-                <p>
-                    Books can tell us what a place is like,
-                    but actually standing there, walking through its
-                    neighborhoods, observing everyday life, and
-                    experiencing the way local people live creates
-                    an entirely different understanding.
-                </p>
-
-                <div class="quote">
-
-                    <p>
-                        “The more I travel, the more I realize how vast
-                        the world is.”
-                    </p>
-
-                </div>
-
-                <p>
                     Every place has its own history, traditions,
                     rhythms, challenges, and values. Experiencing
                     those differences reminds me that there is rarely
                     only one way to see the world or one way to live
                     a meaningful life.
+                </p>
+
+                <p>
+                    I value the opportunity to experience different
+                    cultures directly rather than only understanding
+                    them from a distance. Travel teaches me to pay
+                    attention, ask better questions, and remain open
+                    to perspectives that may be very different
+                    from my own.
                 </p>
 
             </div>
