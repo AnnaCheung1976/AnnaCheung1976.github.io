@@ -1,790 +1,680 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Personal Growth | Anna Cheung</title>
-
-    <meta name="description"
-          content="Anna Cheung's personal perspective on lifelong learning, self-awareness, resilience, responsibility, curiosity, and becoming a better version of ourselves over time.">
-
-    <meta name="author" content="Anna Cheung">
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical"
-          href="https://annacheung1976.github.io/personal-growth.html">
-
-    <meta property="og:title"
-          content="Personal Growth | Anna Cheung">
-
-    <meta property="og:description"
-          content="Anna Cheung's personal perspective on lifelong learning, self-awareness, resilience, curiosity, and meaningful progress.">
-
-    <meta property="og:type" content="website">
-
-    <meta property="og:url"
-          content="https://annacheung1976.github.io/personal-growth.html">
-
-    <meta property="og:site_name"
-          content="Anna Cheung">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "@id": "https://annacheung1976.github.io/personal-growth.html#webpage",
-      "url": "https://annacheung1976.github.io/personal-growth.html",
-      "name": "Personal Growth | Anna Cheung",
-      "description": "Anna Cheung's personal perspective on lifelong learning, self-awareness, resilience, curiosity, and meaningful progress.",
-      "about": {
-        "@id": "https://annacheung1976.github.io/#person"
-      }
-    }
-    </script>
-
-    <style>
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Georgia, "Times New Roman", serif;
-            background: #f5f2ec;
-            color: #2b2926;
-            line-height: 1.8;
-        }
-
-        header {
-            background: #242321;
-            color: #ffffff;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-
-        .nav-container {
-            max-width: 1250px;
-            margin: auto;
-            padding: 18px 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 22px;
-            letter-spacing: 1px;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-        }
-
-        nav a {
-            color: #e8e4dd;
-            text-decoration: none;
-            font-family: Arial, sans-serif;
-            font-size: 13px;
-            letter-spacing: 0.4px;
-            transition: opacity 0.2s ease;
-            white-space: nowrap;
-        }
-
-        nav a:hover {
-            opacity: 0.65;
-        }
-
-        .hero {
-            min-height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 90px 25px;
-            background: #f3efe9;
-        }
-
-        .hero-inner {
-            max-width: 850px;
-        }
-
-        .hero-label {
-            font-family: Arial, sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-size: 11px;
-            color: #8b8173;
-            margin-bottom: 18px;
-        }
-
-        .hero h1 {
-            font-size: 58px;
-            font-weight: normal;
-            line-height: 1.15;
-            margin-bottom: 22px;
-            color: #292723;
-        }
-
-        .hero p {
-            max-width: 720px;
-            margin: auto;
-            color: #655f57;
-            font-size: 19px;
-        }
-
-        section {
-            padding: 90px 25px;
-        }
-
-        .container {
-            max-width: 1050px;
-            margin: auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-
-        .section-label {
-            font-family: Arial, sans-serif;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: #978b7a;
-            margin-bottom: 12px;
-        }
-
-        .section-header h2 {
-            font-size: 40px;
-            font-weight: normal;
-            color: #292723;
-            margin-bottom: 14px;
-        }
-
-        .intro {
-            background: #ffffff;
-        }
-
-        .intro-content {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .intro-content p {
-            color: #615b53;
-            font-size: 18px;
-            margin-bottom: 22px;
-        }
-
-        .quote {
-            margin: 40px 0;
-            padding: 30px 35px;
-            border-left: 2px solid #9c8f7e;
-            background: #f7f4ef;
-        }
-
-        .quote p {
-            font-size: 24px;
-            line-height: 1.6;
-            color: #403c37;
-            margin: 0;
-            font-style: italic;
-        }
-
-        .principles {
-            background: #f5f2ec;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
-
-        .card {
-            background: #ffffff;
-            border: 1px solid #e4ddd2;
-            padding: 38px;
-        }
-
-        .card-number {
-            font-family: Arial, sans-serif;
-            color: #a09484;
-            font-size: 11px;
-            letter-spacing: 2px;
-            margin-bottom: 18px;
-        }
-
-        .card h3 {
-            font-size: 23px;
-            font-weight: normal;
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: #746d64;
-            font-size: 15px;
-        }
-
-        .values {
-            background: #292825;
-            color: #ffffff;
-        }
-
-        .values-content {
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .values .section-label {
-            color: #b5aa9b;
-        }
-
-        .values h2 {
-            font-size: 40px;
-            font-weight: normal;
-            margin-bottom: 28px;
-        }
-
-        .values p {
-            color: #c3bcb2;
-            font-size: 18px;
-            margin-bottom: 22px;
-        }
-
-        .values-list {
-            margin: 35px auto;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .value {
-            border: 1px solid #68635c;
-            padding: 9px 18px;
-            font-family: Arial, sans-serif;
-            font-size: 11px;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            color: #ddd7ce;
-        }
-
-        .progress {
-            background: #eee9e1;
-        }
-
-        .progress-content {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .progress-content p {
-            color: #615b53;
-            font-size: 18px;
-            margin-bottom: 22px;
-        }
-
-        .page-navigation {
-            background: #ffffff;
-            text-align: center;
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 14px 28px;
-            border: 1px solid #292825;
-            color: #292825;
-            text-decoration: none;
-            font-family: Arial, sans-serif;
-            font-size: 12px;
-            letter-spacing: 1px;
-            transition: all 0.2s ease;
-        }
-
-        .button:hover {
-            background: #292825;
-            color: #ffffff;
-        }
-
-        footer {
-            background: #242321;
-            color: #aaa39a;
-            text-align: center;
-            padding: 30px 20px;
-            font-family: Arial, sans-serif;
-            font-size: 12px;
-        }
-
-        @media (max-width: 950px) {
-
-            .nav-container {
-                flex-direction: column;
-                gap: 14px;
-            }
-
-            nav {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 12px 18px;
-            }
-
-            .hero h1 {
-                font-size: 46px;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 65px 22px;
-            }
-
-            .section-header h2,
-            .values h2 {
-                font-size: 34px;
-            }
-        }
-
-        @media (max-width: 550px) {
-
-            .nav-container {
-                padding: 16px 18px;
-            }
-
-            nav {
-                gap: 9px 14px;
-            }
-
-            nav a {
-                font-size: 11px;
-            }
-
-            .hero h1 {
-                font-size: 40px;
-            }
-
-            .card {
-                padding: 28px;
-            }
-
-            .quote p {
-                font-size: 21px;
-            }
-        }
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Personal Growth | Anna Cheung</title>
+
+<meta name="description" content="Anna Cheung's reflections on personal growth, lifelong learning, perspective, resilience, and becoming a better version of ourselves over time.">
+
+<meta name="author" content="Anna Cheung">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://annacheung1976.github.io/personal-growth.html">
+
+<meta property="og:title" content="Personal Growth | Anna Cheung">
+
+<meta property="og:description" content="A personal reflection on growth, learning, perspective, and the journey through different stages of life.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="https://annacheung1976.github.io/personal-growth.html">
+
+<meta property="og:site_name" content="Anna Cheung">
+
+<meta property="og:image" content="https://annacheung1976.github.io/anna-cheung-oxford-2007.png">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Georgia,"Times New Roman",serif;
+background:#f4f1eb;
+color:#2d2b28;
+line-height:1.8;
+}
+
+header{
+background:#242321;
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav-container{
+max-width:1250px;
+margin:auto;
+padding:18px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo a{
+color:#fff;
+text-decoration:none;
+font-size:22px;
+letter-spacing:1px;
+}
+
+nav{
+display:flex;
+gap:24px;
+align-items:center;
+}
+
+nav a{
+color:#e8e4dd;
+text-decoration:none;
+font-family:Arial,sans-serif;
+font-size:13px;
+letter-spacing:.4px;
+white-space:nowrap;
+}
+
+nav a:hover{
+opacity:.65;
+}
+
+
+/* HERO */
+
+.hero{
+background:#eae5dc;
+padding:80px 25px;
+}
+
+.hero-container{
+max-width:1180px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+
+.hero-image img{
+width:100%;
+height:650px;
+object-fit:cover;
+object-position:center;
+display:block;
+}
+
+.photo-caption{
+font-family:Arial,sans-serif;
+font-size:11px;
+letter-spacing:1px;
+color:#918778;
+text-align:center;
+margin-top:12px;
+}
+
+.hero-label{
+font-family:Arial,sans-serif;
+font-size:11px;
+letter-spacing:4px;
+color:#8f8475;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:58px;
+font-weight:normal;
+line-height:1.1;
+margin-bottom:28px;
+}
+
+.hero p{
+font-size:19px;
+color:#625c54;
+margin-bottom:22px;
+}
+
+.hero-quote{
+margin-top:30px;
+padding-left:24px;
+border-left:2px solid #a79a89;
+font-size:21px;
+font-style:italic;
+color:#4d4841;
+}
+
+
+/* STORY */
+
+.story{
+background:#ffffff;
+padding:90px 25px;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+}
+
+.section-label{
+font-family:Arial,sans-serif;
+font-size:11px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:#95897a;
+margin-bottom:14px;
+text-align:center;
+}
+
+.section-title{
+font-size:40px;
+font-weight:normal;
+text-align:center;
+margin-bottom:45px;
+}
+
+.story-content p{
+font-size:18px;
+color:#625d55;
+margin-bottom:24px;
+}
+
+
+/* TIMELINE */
+
+.timeline{
+background:#f4f1eb;
+padding:90px 25px;
+}
+
+.timeline-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:28px;
+}
+
+.timeline-card{
+background:#fff;
+border:1px solid #e1d9cd;
+padding:34px;
+}
+
+.timeline-card h3{
+font-size:22px;
+font-weight:normal;
+margin-bottom:16px;
+}
+
+.timeline-card p{
+font-size:15px;
+color:#726a61;
+}
+
+
+/* REFLECTION */
+
+.reflection{
+background:#292825;
+color:#fff;
+padding:95px 25px;
+}
+
+.reflection .container{
+max-width:850px;
+text-align:center;
+}
+
+.reflection .section-label{
+color:#b6aa9b;
+}
+
+.reflection h2{
+font-size:40px;
+font-weight:normal;
+margin-bottom:28px;
+}
+
+.reflection p{
+font-size:18px;
+color:#d0c8bd;
+margin-bottom:22px;
+}
+
+
+/* LETTER */
+
+.letter{
+background:#ece7df;
+padding:90px 25px;
+}
+
+.letter-box{
+max-width:850px;
+margin:auto;
+border-left:3px solid #a89b89;
+padding:10px 35px;
+}
+
+.letter-box p{
+font-size:19px;
+color:#5f5951;
+margin-bottom:20px;
+}
+
+.signature{
+margin-top:28px;
+font-style:italic;
+font-size:18px;
+color:#403b35;
+}
+
+
+/* NAV */
+
+.page-navigation{
+background:#fff;
+padding:70px 20px;
+text-align:center;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.button{
+font-family:Arial,sans-serif;
+font-size:12px;
+letter-spacing:1px;
+text-decoration:none;
+color:#2d2b28;
+border:1px solid #2d2b28;
+padding:14px 26px;
+}
+
+.button:hover{
+background:#2d2b28;
+color:#fff;
+}
+
+
+footer{
+background:#242321;
+color:#aaa39a;
+font-family:Arial,sans-serif;
+font-size:12px;
+text-align:center;
+padding:30px;
+}
+
+
+@media(max-width:950px){
+
+.nav-container{
+flex-direction:column;
+gap:14px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+gap:12px 18px;
+}
+
+.hero-container{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.hero-copy{
+text-align:center;
+}
+
+.hero-quote{
+text-align:left;
+}
+
+.hero-image{
+max-width:700px;
+margin:auto;
+}
+
+.hero-image img{
+height:auto;
+}
+
+.timeline-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:550px){
+
+.hero{
+padding:55px 18px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.section-title,
+.reflection h2{
+font-size:34px;
+}
+
+nav a{
+font-size:11px;
+}
+
+}
+
+</style>
 </head>
+
 
 <body>
 
 
 <header>
 
-    <div class="nav-container">
+<div class="nav-container">
 
-        <div class="logo">
-            <a href="index.html">Anna Cheung</a>
-        </div>
+<div class="logo">
+<a href="index.html">Anna Cheung</a>
+</div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="investment.html">Investment</a>
-            <a href="travel.html">Travel</a>
-            <a href="personal-growth.html">Personal Growth</a>
-            <a href="philanthropy.html">Philanthropy</a>
-            <a href="index.html#contact">Contact</a>
-        </nav>
+<nav>
 
-    </div>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="investment.html">Investment</a>
+<a href="travel.html">Travel</a>
+<a href="personal-growth.html">Personal Growth</a>
+<a href="philanthropy.html">Philanthropy</a>
+<a href="index.html#contact">Contact</a>
+
+</nav>
+
+</div>
 
 </header>
+
 
 
 <main>
 
 
-    <!-- HERO -->
+<section class="hero">
 
-    <section class="hero">
+<div class="hero-container">
 
-        <div class="hero-inner">
 
-            <div class="hero-label">
-                Personal Growth
-            </div>
+<div class="hero-image">
 
-            <h1>Becoming, Not Arriving</h1>
+<img src="anna-cheung-oxford-2007.png"
+alt="Anna Cheung during her younger years in England">
 
-            <p>
-                I believe personal growth is a lifelong process
-                of learning, reflection, responsibility,
-                and becoming more intentional about the way
-                we choose to live.
-            </p>
+<div class="photo-caption">
+A photograph from an earlier chapter of life · 2007
+</div>
 
-        </div>
+</div>
 
-    </section>
 
 
-    <!-- WHY GROWTH MATTERS -->
+<div class="hero-copy">
 
-    <section class="intro">
+<div class="hero-label">
+Personal Growth
+</div>
 
-        <div class="container">
+<h1>Becoming Through Every Chapter</h1>
 
-            <div class="section-header">
+<p>
+Personal growth is not about becoming someone entirely different.
+It is about becoming more aware, more thoughtful, and more capable
+of living according to the values we truly believe in.
+</p>
 
-                <div class="section-label">
-                    My Perspective
-                </div>
+<p>
+Looking back at earlier stages of my life reminds me that every
+experience—whether exciting, uncertain, joyful, or difficult—has
+quietly shaped the person I am today.
+</p>
 
-                <h2>Why Growth Matters to Me</h2>
+<div class="hero-quote">
+“The person we become is often built by moments that seemed ordinary
+at the time.”
+</div>
 
-            </div>
+</div>
 
-            <div class="intro-content">
 
-                <p>
-                    I do not think personal growth means constantly
-                    trying to become someone completely different.
-                    To me, it is about understanding ourselves more
-                    clearly and becoming more deliberate about
-                    the choices we make.
-                </p>
+</div>
 
-                <p>
-                    Life changes us through experience, relationships,
-                    success, disappointment, responsibility, and time.
-                    The important question is whether we allow those
-                    experiences to teach us something.
-                </p>
+</section>
 
-                <div class="quote">
 
-                    <p>
-                        “I am not trying to become perfect.
-                        I am trying to keep becoming more thoughtful,
-                        more capable, and more true to what I value.”
-                    </p>
 
-                </div>
+<section class="story">
 
-                <p>
-                    I believe curiosity is one of the most important
-                    parts of growth. The moment we believe we already
-                    understand everything is often the moment
-                    we stop learning.
-                </p>
+<div class="container">
 
-            </div>
+<div class="section-label">
+My Journey
+</div>
 
-        </div>
+<h2 class="section-title">
+Growth Happens Gradually
+</h2>
 
-    </section>
+<div class="story-content">
 
+<p>
+When I think about personal growth, I rarely think about dramatic
+turning points. Instead, I think about thousands of small decisions:
+choosing to remain curious, learning from people with different
+perspectives, and continuing to grow even when life feels comfortable.
+</p>
 
-    <!-- PRINCIPLES -->
+<p>
+Growing up in Hong Kong and later building my life in the United States
+allowed me to experience different cultures, communities, and ways of
+thinking. Those experiences taught me that there is rarely only one
+correct way to live a meaningful life.
+</p>
 
-    <section class="principles">
+<p>
+The more I learn, the more I appreciate humility. Knowledge is valuable,
+but the willingness to continue learning may be even more important.
+</p>
 
-        <div class="container">
+</div>
 
-            <div class="section-header">
+</div>
 
-                <div class="section-label">
-                    Principles
-                </div>
+</section>
 
-                <h2>What Growth Means to Me</h2>
 
-            </div>
 
+<section class="timeline">
 
-            <div class="cards">
+<div class="container">
 
+<div class="section-label">
+What I Continue Learning
+</div>
 
-                <div class="card">
+<h2 class="section-title">
+Three Lifelong Practices
+</h2>
 
-                    <div class="card-number">
-                        01
-                    </div>
+<div class="timeline-grid">
 
-                    <h3>Lifelong Learning</h3>
 
-                    <p>
-                        I want to remain curious throughout my life.
-                        There is always more to learn about people,
-                        markets, cultures, relationships, ourselves,
-                        and the world around us.
-                    </p>
+<div class="timeline-card">
 
-                </div>
+<h3>Curiosity</h3>
 
+<p>
+I try to remain genuinely curious about people, ideas, history,
+economics, and the world around me. Curiosity keeps life from becoming
+routine and encourages constant learning.
+</p>
 
-                <div class="card">
+</div>
 
-                    <div class="card-number">
-                        02
-                    </div>
 
-                    <h3>Self-Awareness</h3>
+<div class="timeline-card">
 
-                    <p>
-                        Growth begins with being willing to look
-                        honestly at ourselves — our strengths,
-                        habits, assumptions, weaknesses, and the
-                        reasons behind the decisions we make.
-                    </p>
+<h3>Perspective</h3>
 
-                </div>
+<p>
+Travel and conversation have taught me that understanding another
+person's perspective often matters more than proving our own.
+Listening has become one of the most valuable forms of learning.
+</p>
 
+</div>
 
-                <div class="card">
 
-                    <div class="card-number">
-                        03
-                    </div>
+<div class="timeline-card">
 
-                    <h3>Resilience</h3>
+<h3>Resilience</h3>
 
-                    <p>
-                        Difficult experiences are part of life.
-                        Resilience does not mean pretending that
-                        challenges do not hurt. It means continuing
-                        to move forward, learn, adapt, and rebuild.
-                    </p>
+<p>
+Life rarely follows a perfectly planned path. I believe resilience is
+not about avoiding difficulty, but about continuing forward while
+remaining kind, responsible, and true to ourselves.
+</p>
 
-                </div>
+</div>
 
 
-                <div class="card">
+</div>
 
-                    <div class="card-number">
-                        04
-                    </div>
+</div>
 
-                    <h3>Responsibility</h3>
+</section>
 
-                    <p>
-                        I believe maturity means taking responsibility
-                        for our choices. We cannot control everything
-                        that happens to us, but we can choose how
-                        we respond and what we do next.
-                    </p>
 
-                </div>
 
+<section class="reflection">
 
-                <div class="card">
+<div class="container">
 
-                    <div class="card-number">
-                        05
-                    </div>
+<div class="section-label">
+Reflection
+</div>
 
-                    <h3>Perspective</h3>
+<h2>
+The Freedom to Keep Becoming
+</h2>
 
-                    <p>
-                        The way we see a situation can change
-                        what we do with it. Travel, relationships,
-                        work, investing, and experience have all
-                        reminded me that there is rarely only
-                        one way to understand something.
-                    </p>
+<p>
+Success means different things to different people.
+For me, growth is deeply connected to freedom—the freedom to choose
+my path, to continue learning, and to become more intentional with
+how I spend my time and energy.
+</p>
 
-                </div>
+<p>
+I hope that no matter how much I accomplish in life,
+I never lose the ability to remain curious, compassionate,
+and willing to evolve.
+</p>
 
+</div>
 
-                <div class="card">
+</section>
 
-                    <div class="card-number">
-                        06
-                    </div>
 
-                    <h3>Intentional Living</h3>
 
-                    <p>
-                        I want the choices I make to reflect what
-                        I actually value. Success is more meaningful
-                        when the life behind it also feels honest,
-                        balanced, and purposeful.
-                    </p>
+<section class="letter">
 
-                </div>
+<div class="letter-box">
 
+<p>
+If I could say something to my younger self in this photograph,
+it would simply be this:
+</p>
 
-            </div>
+<p>
+Keep exploring. Keep asking questions. Don't rush to have every answer.
+The world is much larger than you imagine, and many of life's most
+meaningful opportunities will arrive through experiences you never
+planned.
+</p>
 
-        </div>
+<p>
+Every chapter will teach you something different,
+and one day you will look back with gratitude at how far you've come.
+</p>
 
-    </section>
+<div class="signature">
+— Anna Cheung
+</div>
 
+</div>
 
-    <!-- VALUES -->
+</section>
 
-    <section class="values">
 
-        <div class="container">
 
-            <div class="values-content">
+<section class="page-navigation">
 
-                <div class="section-label">
-                    Values
-                </div>
+<div class="buttons">
 
-                <h2>The Principles I Want to Live By</h2>
+<a class="button" href="index.html">
+Return Home
+</a>
 
-                <div class="values-list">
+<a class="button" href="about.html">
+About Anna
+</a>
 
-                    <div class="value">Kindness</div>
+<a class="button" href="investment.html">
+Investment
+</a>
 
-                    <div class="value">Integrity</div>
+<a class="button" href="travel.html">
+Travel
+</a>
 
-                    <div class="value">Responsibility</div>
+<a class="button" href="philanthropy.html">
+Philanthropy
+</a>
 
-                    <div class="value">Freedom</div>
+</div>
 
-                </div>
-
-                <p>
-                    Kindness shapes how I want to treat people.
-                    Integrity matters because trust is difficult
-                    to build and easy to lose.
-                </p>
-
-                <p>
-                    Responsibility reminds me that our choices matter,
-                    especially to the people who depend on us.
-                    Freedom gives us the ability to build a life
-                    that reflects what we truly believe.
-                </p>
-
-                <p>
-                    These values influence the way I think about
-                    relationships, work, investing, giving,
-                    and the kind of person I hope to become.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROGRESS -->
-
-    <section class="progress">
-
-        <div class="container">
-
-            <div class="section-header">
-
-                <div class="section-label">
-                    Continuing Forward
-                </div>
-
-                <h2>Progress Over Perfection</h2>
-
-            </div>
-
-
-            <div class="progress-content">
-
-                <p>
-                    I am ambitious, and I want to succeed,
-                    but I do not believe success should be measured
-                    only by money, titles, or accomplishments.
-                </p>
-
-                <p>
-                    I also care about whether I can be trusted,
-                    whether I show up for the people who matter
-                    to me, whether I remain curious,
-                    and whether success gives me greater capacity
-                    to help someone else.
-                </p>
-
-                <p>
-                    I am certainly not perfect, and I do not expect
-                    to be. What matters to me is continuing to learn,
-                    becoming more aware of the person I am,
-                    and trying to make tomorrow's choices
-                    a little wiser than yesterday's.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PAGE NAVIGATION -->
-
-    <section class="page-navigation">
-
-        <div class="container">
-
-            <div class="buttons">
-
-                <a class="button" href="index.html">
-                    Return to Home
-                </a>
-
-                <a class="button" href="about.html">
-                    About Anna
-                </a>
-
-                <a class="button" href="investment.html">
-                    Investment
-                </a>
-
-                <a class="button" href="travel.html">
-                    Travel
-                </a>
-
-                <a class="button" href="philanthropy.html">
-                    Philanthropy
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
+</section>
 
 
 </main>
 
 
+
 <footer>
-    © 2026 Anna Cheung. All rights reserved.
+© 2026 Anna Cheung. All rights reserved.
 </footer>
 
 
